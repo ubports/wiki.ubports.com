@@ -1,4 +1,4 @@
-What works
+## What works
 Works
 Not working
 Not Tested
@@ -16,12 +16,13 @@ Video Decode
 Suspend/Resume
 
 
-How to install Ubuntu Touch
+# How to install Ubuntu Touch
 NOTE!!! THIS WILL WIPE YOUR PHONE!!!! THIS WILL REMOVE ALL YOUR USERDATA!!
 
 1. Install the required tools:
-
+´´´
 sudo apt-get install ubuntu-device-flash phablet-tools
+´´´
 2. Reboot your device into fastboot mode (vol up + power) and Connect your device with an USB cable to your computer.
 
 3. Flash your device
