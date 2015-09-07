@@ -27,14 +27,22 @@ sudo apt-get install ubuntu-device-flash phablet-tools
 
 3. Flash your device
 
+```
 ubuntu-device-flash -v —server=http://system-image.ubports.com touch —channel=ubuntu-touch/stable —device=bacon --bootstrap
-Channels available: ubuntu-touch/stable ubuntu-touch/rc - (daily) ubuntu-touch/devel - (daily dev)
+```
+Channels available: 
+ubuntu-touch/stable 
+ubuntu-touch/rc - (daily) 
+ubuntu-touch/devel - (daily dev)
 
 4. Wait 15 minutes, if it's still stuck on the boot logo, then run:
 
+```
 adb reboot
+```
 
-How to install Ubuntu Touch using MultiRom
+## How to install Ubuntu Touch using MultiRom
+
 1. Download the temporally version of Multirom manager (I send the updates to the Multirom developer) (MultiROMMgr-UT.apk)
 
 2. Install the .apk file (if you have Multirom manager installed you need uninstall it)
@@ -42,8 +50,9 @@ How to install Ubuntu Touch using MultiRom
 Using file browser: stackoverflow
 
 Using adb:
-
+```
 adb install MultiROMMgr-UT.apk
+```
 3. Open the app and install Multirom v32j, Recovery 2015-06-07 (It will say you have it already installed, this is just a workaround to get ubuntu touch work. YOU NEED TO INSTALL THIS ANYWAY) and kernel for your android version
 
 4. When it's done installing and booted back up, you can install Ubuntu Touch.
