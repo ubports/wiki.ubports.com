@@ -1,5 +1,8 @@
-!!THIS WIKI IS UNDER DEVELOPMENT, expect some missing content and bugs...!!!
+## !!!THIS WIKI IS UNDER DEVELOPMENT!!!
+## expect some missing content
+## NOTE! We are curently refreshing the style of this page. 
 
+## Please help us add content to this wiki
 
 Are you interested in Ubuntu touch? Does it look like something you would use as a daily driver? or may you just be curious on what this all is about.
 
