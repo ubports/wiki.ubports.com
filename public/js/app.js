@@ -8,7 +8,7 @@
   var Jingo = {
 
     init: function() {
-      var navh = $(".navbar").height(),
+      var navh = $(".container-fluid").height(),
           $tools = $(".tools"),
           qs, hl = null;
 

@@ -10,39 +10,71 @@ html
     link(rel="stylesheet", href="/css/style.css")
     link(rel="stylesheet", href="/css/ionicons.min.css")
     link(rel="stylesheet", href="/css/shCoreDefault.css")
+    link(rel="stylesheet", href="/css/ubuntu.css")
     block styles
     if hasCustomStyle()
       style.
         !{_style}
   body
-    -var term_ph = (typeof term == "undefined" ? "" : term)
-    .navbar.navbar-inverse.navbar-fixed-top
-      .container-fluid
+
+    .navbar.navbar-default.navbar-fixed-top(style="background-color: rgb(237, 237, 237);")
+      .container
+        .navbar-header(style="width: auto;")
+          .visible-xs.visible-sm(data-role='actions')
+            button.fa.fa-bars(type='button', ng-click='opened = !opened')
+            div(data-role='actions-overflow-list', ng-class='{opened: opened}')
+              ul
+                li
+                  a(ng-click='opened = false', href='https://devices.ubports.com', style="background: none;") Devices
+                li
+                  a(ng-click='opened = false', href='https://forums.ubports.com', style="background: none;") Forums
+                li
+                  a(ng-click='opened = false', href='https://wiki.ubports.com', style="background: none;") Wiki
+                li
+                  a(ng-click='opened = false', href='https://ubports.com/get-involved', style="background: none;") Get Involved
+                li
+                  a(ng-click='opened = false', href='https://ubports.com/developers', style="background: none;") Developers
+          a.navbar-brand(href='https://ubports.com', style="max-width: 1000px; background: none;")
+            div(data-role='back-btn')
+            | UBports
+
+        .navbar-collapse.navbar-right.hidden-xs.hidden-sm
+          ul.nav.navbar-nav
+            li
+              a(href='https://devices.ubports.com', style="background: none;") Devices
+            li
+              a(href='https://forums.ubports.com', style="background: none;") Forums
+            li
+              a(href='https://wiki.ubports.com', style="background: none;") Wiki
+            li
+              a(href='https://ubports.com/get-involved', style="background: none;") Get Involved
+            li
+              a(href='https://ubports.com/developers', style="background: none;") Developers
+
+      .container-fluid(style="background-color: white;")
         .navbar-header
-          a(href="/").navbar-brand #{appTitle}
           if canSearch()
             form(action="/search").navbar-form.search.navbar-left
               .input-group.input-group-sm.search
-                input.form-control(type="text", value="#{term_ph}", data-i-search-input="true",name="term",placeholder="Search the wiki")
+                input.form-control(type="text", value="#{term_ph}", data-i-search-input="true",name="term",placeholder="Search the wiki", style="background-color: #777; border-color: #777;")
                 span.input-group-btn
                   button.btn.btn-primary(type="submit") Search
           .navbar-right
             if isAnonymous()
               p.user You're not&nbsp;
-                a(id='login',href='/login?destination', title='Access login page') logged in
+                a(id='login',href='/login?destination', title='Access login page', style="color: #777;") Log in
             else
               p.user
                 if user.email
                   img(src=gravatar().url("#{user.email}", {s:24}))
-                b &nbsp;#{user.displayName}&nbsp;
+                b(style="color: #777;") &nbsp;#{user.displayName}&nbsp;
                 a.logout(href='/logout', title='Become anonymous')
                   i.icon.ion-power
 
-    .tools
-      block tools
 
-    .container
-
+    .container(style="margin-top: 45px;")
+        .tools(style="height: 42px")
+            block tools
       .row
         if hasSidebar()
           .col-md-2.with-sidebar
@@ -59,11 +91,32 @@ html
           .col-md-8.with-footer
             .content !{_footer}
 
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+    center
+      br
+      p
+        a(href='https://www.digitalocean.com/?refcode=afe991ab278c', style="background: none;")
+          img(src='https://www.digitalocean.com/assets/images/logos-badges/png/DO_Proudly_Hosted_Badge_Grey-1652c782.png', width='150', height='40', style="background: none;")
+      p
+        | This site is maintained by
+        a(href='https://ubports.com/developers', style="background: none; padding-right: 0px;")  The UBports Developers
+        |  and is not an any way endorsed by or affiliated with
+        a(href='http://ubuntu.com/', style="background: none; padding-right: 0px;")  Ubuntu
+        |  or
+        a(href='http://www.canonical.com/', style="background: none; padding-right: 0px;")  Canonical
+        | .
+        a(href='http://ubuntu.com/', style="background: none; padding-right: 0px;")  Ubuntu
+        |  and
+        a(href='http://www.canonical.com/', style="background: none; padding-right: 0px;")  Canonical
+        |  are registered trademarks of
+        a(href='http://www.canonical.com/', style="background: none; padding-right: 0px;")  Canonical Ltd.
+
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
     script.
       window.jQuery || document.write("<sc" + "ript src='/vendor/jquery.min.js'></scr" + "ipt>");
     script(src="/vendor/bootstrap/js/bootstrap.min.js")
     script(src="/js/app.js")
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
     script.
       Jingo.init();
     block scripts
