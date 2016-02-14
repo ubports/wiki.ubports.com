@@ -1,6 +1,6 @@
 Development:
-* [[Building]]
-* [[Porting]]
+* [[Building ubports source]]
+* [[Porting to new device]]
 
 Links:
 * [Ubports home](https://ubports.com)
