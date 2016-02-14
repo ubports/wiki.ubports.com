@@ -1,0 +1,1 @@
+If your device has support for Multirom, you can find instructions your device here: devices.ubports.com
