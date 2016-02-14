@@ -1,3 +1,5 @@
+[[Home]]
+
 Install:
 * [[using system-server]]
 * [[using Multirom]]
