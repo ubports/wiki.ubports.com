@@ -1,3 +1,8 @@
+Install:
+* [[using system-server]]
+* [[using Multirom]]
+* [[using rootstock]]
+
 Development:
 * [[Building ubports source]]
 * [[Porting to new device]]
