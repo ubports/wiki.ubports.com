@@ -1,7 +1,7 @@
 Install:
 * [[using system-server]]
 * [[using Multirom]]
-* [[using rootstock]]
+* [[using recovery]]
 
 Development:
 * [[Building ubports source]]
