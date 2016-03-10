@@ -28,6 +28,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
 ```
 mkdir phablet && cd phablet/
 repo init -u https://github.com/ubports/android -b ubp-5.1
+repo sync
 ```
 
 
