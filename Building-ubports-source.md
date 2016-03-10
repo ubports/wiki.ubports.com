@@ -1,18 +1,20 @@
-This guide will cover the basic of building the android part that is used in Ubuntu touch. Example device used in this guide is Oneplus one
+This guide covers the basics of building certain portions of Android as they relate to Ubuntu Touch. The example device used in this guide is a OnePlus One.
 
-# Set up your environment
+# Setting up the environment
 
-Setting up you environment is necessary before starting poring to any device.
+Setting up the environment is necessary before porting any device. Though it's not strictly necessary to use Ubuntu, you might run into problems by using different versions of software. This guide uses Ubuntu.
+
+If you do not use Ubuntu as your host OS, you should look into virtualizing a Ubuntu environment via LXC or a VM.
 
 ## Using Ubuntu:
-### Step 1, Add the phablet-toos:
+### Step 1, Add the phablet-tools repository:
 ```
 sudo add-apt-repository ppa:phablet-team/tools
 sudo apt-get update
 sudo apt-get install phablet-tools
 ```
 
-### Step 2, Installing building tools:
+### Step 2, Installing build tools:
 ```
 sudo apt-get install git gnupg flex bison gperf build-essential \
   zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -22,7 +24,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   g++-4.8-multilib
 ```
 
-### Step 3, Create a new directory and download the ubp tree
+### Step 3, Create a new directory and check out the ubp tree
 ```
 mkdir phablet && cd phablet/
 repo init -u https://github.com/ubports/android -b ubp-5.1
