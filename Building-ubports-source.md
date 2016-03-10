@@ -24,7 +24,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
 
 ### Step 3, Create a new directory and download the ubp tree
 ```
-mkdir phablet
+mkdir phablet && cd phablet/
 repo init -u https://github.com/ubports/android -b ubp-5.1
 ```
 
