@@ -14,5 +14,6 @@ sudo fastboot flash recovery recovery.img
 5. Reboot into recovery (hold power + vol up)
 6. Flash ubuntu touch using ubuntu-device-flash without --bootstrap
 ```
+adb shell "mount -a"
 sudo ubuntu-device-flash --server=http://system-image.ubports.com touch --channel=ubuntu-touch/stable --device=FP2
 ```
