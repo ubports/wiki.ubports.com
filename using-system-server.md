@@ -1,6 +1,6 @@
 You can find instructions for each device here: [devices.ubports.com](https://devices.ubports.com)
 
-NOTE!!! THIS WILL WIPE YOUR PHONE!!!! THIS WILL REMOVE ALL YOUR USERDATA!!
+NOTE! THIS WILL WIPE YOUR PHONE! THIS MAY REMOVE ALL YOUR USERDATA!
 
 1. Install the required tools:
 ```sudo apt-get install ubuntu-device-flash phablet-tools```
