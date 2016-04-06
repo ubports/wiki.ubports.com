@@ -11,7 +11,8 @@ The workaround for this bug is to flash boot.img and recovery.img using fastboot
 sudo fastboot flash boot boot.img
 sudo fastboot flash recovery recovery.img
 ```
-5. Reboot into recovery (hold power + vol up)
+5. Reboot into recovery (hold power + vol up). You can also type fastboot reboot while pressing the power down button. There is no need to start sideload at this point.
+
 6. Flash ubuntu touch using ubuntu-device-flash without --bootstrap
 ```
 adb shell "mount -a"
