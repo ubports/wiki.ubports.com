@@ -28,7 +28,9 @@ Copy your downloaded prebuilt image to your build directory, usually ~/phablet/o
 This part is a quick series of steps that should be easy to execute. First, boot your phone into Fastboot mode. You probably do this by holding down the power and volume down buttons to boot the phone, but your manufacturer may have changed that.
 
 Then, run 
-``fastboot devices``
+```
+fastboot devices
+```
 Make sure that your device shows up. If it does, we're good to go
 
 cd into your build directory, for me it's usually ~/phablet/out/target/product/[devicename]
@@ -43,11 +45,15 @@ And boot into your recovery using your phone's preferred method.
 ## Installing the system
 
 Once you've appeared at the recovery (probably a black screen after your boot logo, or the boot logo hanging for more than 20 seconds), run 
-``adb devices``
+```
+adb devices
+```
 To make sure your device appears. If it does, we're good to go. If it doesn't, it's time to ask someone because we haven't written docs for that quite yet.
 
 Next, run 
-``adb shell``
+```
+adb shell
+```
 to enter your phone's shell.
 
 Once you're in, type these commands:
