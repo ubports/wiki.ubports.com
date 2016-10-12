@@ -3,7 +3,7 @@ In case you want to connect your phone manually, maybe because you don't have GU
 Since Network Manager is driven by config files, first step is to create a new config file, probably for a WiFi connection:
 
     [connection]
-    id=Nerdbase
+    id=<xxx>
     uuid=<uuid>
     type=802-11-wireless
     autoconnect=true
@@ -32,11 +32,12 @@ Since Network Manager is driven by config files, first step is to create a new c
     psk=<psk>
 
 The following fields need to be filled up:
-
-1. `<uuid>` - Create a new one by calling uuid on your desktop
-2. `<ssid>` - Needs to be in ascii bytes, for this use the following python snippet: `';'.join(str(ord(c)) for c in 'SSID')+';'`
-3. `<mac>` - Paste MAC address of interface from ifconfig -a
-4. `<psk>` - Output from wpa_passphrase <ssid> <passphrase>
+ 
+1. `<xxx>` - Name of the connection, best to be the same as the SSID
+2. `<uuid>` - Create a new one by calling uuid on your desktop
+3. `<ssid>` - Needs to be in ascii bytes, for this use the following python snippet: `';'.join(str(ord(c)) for c in 'SSID')+';'`
+4. `<mac>` - Paste MAC address of interface from ifconfig -a
+5. `<psk>` - Output from wpa_passphrase <ssid> <passphrase>
 
 Call this file after the SSID of the network, lets say xxx.
 
