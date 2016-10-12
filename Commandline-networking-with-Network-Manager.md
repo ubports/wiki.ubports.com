@@ -4,7 +4,7 @@ Since Network Manager is driven by config files, first step is to create a new c
 
     [connection]
     id=Nerdbase
-    uuid=<create_new_uuid_with_uuid_on_desktop>
+    uuid=<uuid>
     type=802-11-wireless
     autoconnect=true
     timestamp=0
@@ -16,7 +16,7 @@ Since Network Manager is driven by config files, first step is to create a new c
     never-default=false
 
     [802-11-wireless]
-    ssid=<use_python_script_on_desktop>
+    ssid=<ssid>
     mode=infrastructure
     channel=0
     rate=0
@@ -24,12 +24,19 @@ Since Network Manager is driven by config files, first step is to create a new c
     mtu=0
     seen-bssids=
     security=802-11-wireless-security
-    mac-address=<mac_from_wlan0_or_similar>
+    mac-address=<mac>
 
     [802-11-wireless-security]
     key-mgmt=wpa-psk
     wep-tx-keyidx=0
-    psk=<psk_from_wpa_passphrase_output>
+    psk=<psk>
+
+The following fields need to be filled up:
+
+1. `<uuid>` - Create a new one by calling uuid on your desktop
+2. `<ssid>` - Needs to be in ascii bytes, for this use the following python snippet: `';'.join(str(ord(c)) for c in 'SSID')+';'`
+3. `<mac>` - Paste MAC address of interface from ifconfig -a
+4. `<psk>` - Output from wpa_passphrase <ssid> <passphrase>
 
 Call this file after the SSID of the network, lets say xxx.
 
@@ -37,10 +44,10 @@ We will place this config file in the folder /etc/NetworkManager/system-connecti
 
 Now we use the cmdline tool nmcli to tell Network-Manager what we want:
 
-1. nmcli con reload
+`nmcli con reload`
 
 this will re-read the config directories
 
-2. nmcli con up id 'xxx'
+`nmcli con up id xxx`
 
 This should bring up the interface, attach wpa_supplicant to it and handle the association and key-excha nge, and get dhclient informed. Pretty neat!
