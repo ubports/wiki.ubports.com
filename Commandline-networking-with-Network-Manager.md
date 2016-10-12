@@ -50,4 +50,4 @@ this will re-read the config directories
 
 `nmcli con up id xxx`
 
-This should bring up the interface, attach wpa_supplicant to it and handle the association and key-excha nge, and get dhclient informed. Pretty neat!
+This should bring up the interface, attach wpa_supplicant to it and handle the association and key exchange, and get dhclient informed. Pretty neat!
