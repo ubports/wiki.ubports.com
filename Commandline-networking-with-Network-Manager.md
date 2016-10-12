@@ -43,7 +43,7 @@ Call this file after the SSID of the network, lets say xxx.
 
 We will place this config file in the folder /etc/NetworkManager/system-connections/ and change the permissions to 0600 - this is important, files with other modes will not be accepted.
 
-*Note: After placing the connection file in this folder the connection will be automatically started whenever its possible, i.e. the interface is accessible and the AP is nearby. Probably you want to move this file out again if no longer needed.
+*Note: After placing the connection file in this folder the connection will be automatically started whenever its possible, i.e. the interface is accessible and the AP is nearby. Probably you want to move this file out again if no longer needed.*
 
 Now we use the cmdline tool nmcli to tell Network-Manager what we want:
 
