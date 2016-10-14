@@ -1,5 +1,7 @@
+# Setting up your Tree
+
 # This page is under construction!
-Some of the information is missing or incomplete. Or wrong. You might not want to use it yet.
+Some of the information is missing or incomplete.
 
 The device tree is all of the code and prebuilt binaries that go into your device's Android build. Your tree is going to be the most important part of your building journey, so it's important to set it up right! 
 In this guide I'll be assuming that you want to use the CyanogenMod sources, which are the most common when building Ubuntu Touch for non-Nexus devices. So, with that, let's get a short lecture on your favorite tool for the duration of this task: Repo!
@@ -51,19 +53,65 @@ This is what the official Ubuntu phones, such as the Nexus 4, are built on. You'
 `repo init -u https://code-review.phablet.ubuntu.com/p/aosp/platform/manifest.git -b phablet-4.4.2_r1`
 
 ### UBPorts' 5.1
-A phone with CyanogenMod 12.1 will use our sources. 
+A phone with a current UBPorts port, or a phone with CyanogenMod 12.1, will use our sources. 
 `repo init -u https://github.com/ubports/android -b ubp-5.1`
 
 ## Adding your Device-Specific Stuff
 
-Now that you have the base of the Android source, you'll need to find your device-specific toys. These enable the build tree to make Android for your device.
+Okay, so now you have the default manifest for Ubuntu Touch. This will enable you to download the basic Android sources used to build Ubuntu Touch, but you'll need to find device-specific files. These enable the build tree to make Android for your device.
 
 ### The Local Manifest
 
 If there's any part for you to make a mistake on, this will be the one. Finding the files isn't hard, but it might take you a couple of tries to get repo's local manifest created correctly.
 
-First, you'll want to find the repositories for your device on [CyanogenMod's GitHub organization](https://github.com/CyanogenMod). You can do this by typing your device's codename into the search box. You can find the codename by going to the [CyanogenMod downloads site](https://download.cyanogenmod.org/) and finding your device in the sidebar. The lowercase word in parentheses is the codename of the device.
-You'll want the device repository, `android_device_[manufacturer]_[device]`. There will be a cm.dependencies file in that repository that will tell you all of the other repositories that your device is reliant upon. 
+First, you'll want to find the repositories for your device on [CyanogenMod's GitHub organization](https://github.com/CyanogenMod). You can do this by typing your device's codename into the search box. You'll want the device repository, `android_device_[manufacturer]_[device]`. Take down this name, as you'll need it later.
+
+There will be a `cm.dependencies` file in that repository that will tell you all of the other repositories that your device is reliant upon. Keep this around as you will need it in a little bit.
+
+
+Change into your `~/phablet` directory and create the directory `.repo/local_manifests`. Then, edit the file `.repo/local_manifests/[manufacturer]_[device].xml`. 
+
+Paste the following into the file:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+</manifest>
+```
+
+This is the base information required for the file to be a local manifest.
+
+If you're not using the UBPorts source, add this to between the `<manifest>` and `</manifest>` tags:
+
+```xml
+  <remote name="cm"
+	fetch="http://github.com/CyanogenMod"
+	revision="refs/heads/cm-12.1" />
+```
+
+#### The Device Repository
+
+Next, we'll fill the manifest with information. Start with your device repository. Create the following line between the `<manifest>` and `</manifest>` tags, replacing the information inside the square brackets with your own.
+
+```xml
+<project path="device/[manufacturer]/[device]" name="[repository name]" remote="cm" revision="cm12.1" />
+```
+
+The manufacturer and device codename should be the same as they are in the repository name.
+
+#### The dependencies
+
+Now create more lines like the previous, using the cm.dependencies file you found earlier in your device repository. This file lists all of the other repositories that you need to build for your selected device. It's listed in a fairly straightforward way, so create a line for each of the entries in there using the following template.
+
+```xml
+<project path="[target_path]" name="[repository]" remote="cm" revision="cm12.1" />
+```
+
+And that should be it. Run `repo sync` to download all of the juicy sources for your tree. This will take a while as it must download anywhere from 12 to 18GB of files.
+
+After it's finished, make sure that all of the directories specified in the `path` variables have been created and are populated. Then continue on to find the vendor blobs.
+
 
 ### Vendor Blobs
 
@@ -78,5 +126,9 @@ The blobs go into the vendor/ folder in your tree, respecting the AOSP naming co
 
 #### If you do not have a Nexus device
 
-This is a bit of a tough one because every device is slightly different. In general, though, you will want to find the CyanogenMod Wiki page on building CM for your device and follow the instructions there.
-[TODO] add the part where you cd to the device folder and run extract-files.sh
+This is a bit of a tough one because every device is slightly different. In general, though, you will want to find the CyanogenMod Wiki page on building CM for your device and follow the instructions there. For example, [here](https://wiki.cyanogenmod.org/w/Build_for_endeavoru#Extract_proprietary_blobs) is the one for the HTC One X. It will probably have you run an extract-files.sh script which will extract the blobs automatically. Please note that you will need a device that is currently running your desired version of CyanogenMod for this to work.
+
+
+### Conclusion
+
+If you followed all of these directions and the folders `device/[manufacturer]/[device]`, `vendor/[manufacturer]/[device]`, and the other directories specified in the cm.dependencies file are populated, then congratulations! You have a complete source tree (probably). We recommend you use `tar` to take a backup of this tree now so that you don't have to wait for the download if you break something.
