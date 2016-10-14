@@ -1,5 +1,3 @@
-# Setting up your Tree
-
 # This page is under construction!
 Some of the information is missing or incomplete.
 
