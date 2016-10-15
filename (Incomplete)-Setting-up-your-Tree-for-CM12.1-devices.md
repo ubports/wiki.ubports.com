@@ -30,7 +30,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   g++-4.8-multilib
 ```
 
-Next, download repo. You can get and install it using the information [here](http://source.android.com/source/downloading.html "Repo Download", in the "Installing Repo" section.
+Next, download repo. You can get and install it using the information [here](http://source.android.com/source/downloading.html "Repo Download"), in the "Installing Repo" section.
 Then, make yourself a directory, `~/phablet`, then `cd` into it. This will be where your Android source tree goes. 
 
 ## Getting your branch
