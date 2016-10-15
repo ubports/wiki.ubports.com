@@ -128,6 +128,8 @@ The blobs go into the vendor/ folder in your tree, respecting the AOSP naming co
 This is a bit of a tough one because every device is slightly different. In general, though, you will want to find the CyanogenMod Wiki page on building CM for your device and follow the instructions there. For example, [here](https://wiki.cyanogenmod.org/w/Build_for_endeavoru#Extract_proprietary_blobs) is the one for the HTC One X. It will probably have you run an extract-files.sh script which will extract the blobs automatically. Please note that you will need a device that is currently running your desired version of CyanogenMod for this to work.
 
 
-### Conclusion
+## Conclusion
 
 If you followed all of these directions and the folders `device/[manufacturer]/[device]`, `vendor/[manufacturer]/[device]`, and the other directories specified in the cm.dependencies file are populated, then congratulations! You have a complete source tree (probably). We recommend you use `tar` to take a backup of this tree now so that you don't have to wait for the download if you break something.
+
+If you'd like to learn more about the manifest, you can look at [CyanogenMod's page on the subject](http://wiki.cyanogenmod.org/w/Doc:_Using_manifests).
