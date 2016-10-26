@@ -8,7 +8,7 @@ Install:
 Development:
 * [[Building ubports source]]
 * [Porting to new device](https://developer.ubuntu.com/en/phone/devices/porting-new-device/)
-[UBports Development Information](https://wiki.ubports.com/wiki/Ubports-Development-Information)
+* [UBports Development Information](https://wiki.ubports.com/wiki/Ubports-Development-Information)
 
 Links:
 * [Ubports home](https://ubports.com)
