@@ -8,7 +8,7 @@ Install:
 Development:
 * [[Building ubports source]]
 * [Porting to new device](https://developer.ubuntu.com/en/phone/devices/porting-new-device/)
-* [[Commandline networking with Network-Manager]]
+* [[Ubports Development Information]]
 
 Links:
 * [Ubports home](https://ubports.com)
