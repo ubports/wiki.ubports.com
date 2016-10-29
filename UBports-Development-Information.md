@@ -11,6 +11,10 @@ This information will differ based on the type of device you want to port to.
 [CM12.1](https://wiki.ubports.com/wiki/(Incomplete)-Setting-up-your-Tree-for-CM12.1-devices)
 [Android 6.0.x](https://wiki.ubports.com/wiki/Setting-Up-your-Tree-for-Nexus-%2B-Pixel-Devices) (Nexus or Pixel devices with Android Marshmallow only)
 
+### Installing your Build
+
+[[Installing Your Build With Rootstock]]
+
 ### Miscellaneous things you can do after you have a booting device
 
 [Setting up Wi-Fi from the command line](https://wiki.ubports.com/wiki/Commandline-networking-with-Network-Manager)
