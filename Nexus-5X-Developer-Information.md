@@ -14,6 +14,7 @@ Bullhead is currently in a booting state, but not graphically. After following t
 
 ## Current Goals
 
+Get ADB running
 Figure out why `test_hwconfig` crashes all the time.
 
 ## Install Prerequisites
