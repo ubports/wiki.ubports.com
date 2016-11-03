@@ -1,5 +1,7 @@
 ## Overview
 
+This page isn't *quite* finished yet. Please contact @UniversalSuperBox on the UBports IRC if you want to start building right now. I'll try my hardest to get you going.
+
 The Nexus 5X (bullhead), released in October of 2015, shipped with Android 6.0 Marshmallow. Because of this, it is difficult to port Ubuntu Touch to at the moment. That won't stop us.
 
 This page will contain the information needed to get up to date on the development of Bullhead. This includes instructions to get the source tree, patches, and changes to make after building.
@@ -57,7 +59,7 @@ It's not that I can't do it, it's that I'm too lazy. There's a few patches here 
 
 [TODO] Link patches
 
-There's also a generic initramfs that you'll need to download and place at `~/phablet/ubuntu/initrd/ubuntu_prebuilt_initrd/initrd.img-touch`. [TODO] link the initrd
+There's also a generic initramfs that you'll need to download and place at `~/phablet/ubuntu/initrd/ubuntu_prebuilt_initrd/initrd.img-touch`. You can find it [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE)
 
 ## Build the Kernel
 
