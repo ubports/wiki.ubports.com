@@ -34,32 +34,12 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
 
 Getting the tree set up is simple, as usual. 
 
-Start with `repo init -u git://phablet.ubuntu.com/aosp/platform/manifest.git -b phablet-6.0.0_r1`. Now, create the file `.repo/local_manifests/lge_bullhead.xml`. Paste the following into it.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-   <remote name="usb_github"
-	fetch="https://github.com/usb-bullhead-ubuntu-touch"
-	revision="ubuntu-touch" />
-
-   <project path="kernel/msm" name="kernel_msm" remote="usb_github" revision="android-msm-bullhead-3.10-marshmallow-dr1.6-ut" />
-   <project path="device/lge/bullhead" name="device-lge-bullhead" remote="usb_github" revision="ubuntu-touch" />
-   <project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" remote="aosp" revision="marshmallow-dr1.6-release" />
-
-</manifest>
-```
-
-You will also need to edit `.repo/manifest.xml` and remove the line for `hardware/qcom/msm8994`, otherwise you will get a fatal sync error. The updated version from AOSP works better than the Ubuntu Touch version. 
+Start with `repo init -u https://github.com/usb-bullhead-ubuntu-touch/android.git -b current-devel`. Then, run `repo sync -j8` to sync your sources.
 
 
 ## Patch things that I can't
 
-It's not that I can't do it, it's that I'm too lazy. There's a few patches here that you need to apply to your tree in order to successfully build Ubuntu Touch. I'll give you the commands to do it.
-
-[TODO] Link patches
-
-There's also a generic initramfs that you'll need to download and place at `~/phablet/ubuntu/initrd/ubuntu_prebuilt_initrd/initrd.img-touch`. You can find it [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE)
+There's a generic initramfs that you'll need to download and place at `~/phablet/ubuntu/initrd/ubuntu_prebuilt_initrd/initrd.img-touch` in order to get a debugging Telnet connection. You can find it [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE)
 
 ## Build the Kernel
 
