@@ -32,7 +32,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
 
 Getting the tree set up is simple, as usual. 
 
-Start with `repo init -u https://github.com/usb-bullhead-ubuntu-touch/android.git -b current-devel`. Then, run `repo sync -j8` to sync your sources.
+Start with `repo init -u https://github.com/usb-bullhead-ubuntu-touch/android.git -b current-devel`. Then, run `repo sync -j8 -c` to sync your sources.
 
 
 ## Patch things that I can't
