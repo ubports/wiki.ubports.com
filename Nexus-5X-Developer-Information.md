@@ -1,7 +1,5 @@
 ## Overview
 
-This page isn't *quite* finished yet. Please contact @UniversalSuperBox on the UBports IRC if you want to start building right now. I'll try my hardest to get you going.
-
 The Nexus 5X (bullhead), released in October of 2015, shipped with Android 6.0 Marshmallow. Because of this, it is difficult to port Ubuntu Touch to at the moment. That won't stop us.
 
 This page will contain the information needed to get up to date on the development of Bullhead. This includes instructions to get the source tree, patches, and changes to make after building.
