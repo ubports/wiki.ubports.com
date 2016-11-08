@@ -1,5 +1,3 @@
-Hey! This page is currently under construction!
-
 So, you've got your Ubuntu Touch image ready to go. Now what? Should you create a .ZIP file and sideload it with adb? Well, not quite, but installing Ubuntu Touch isn't very hard at all once you've got the tools. Let's begin!
 
 
@@ -18,7 +16,7 @@ You can also try the 16.04 or 16.10 images if you're feeling adventurous and wil
 
 ## Downloading Rootstock-NG
 In order to install the system, we need a script called rootstock-touch-install, which is included in Rootstock-NG. The version found on the public Launchpad is broken, so we'll use Mariogrip's version: <http://people.ubuntu.com/~mariogrip/Ubuntu-touch/project-rootstock-ng.tar.gz>
-Download that, extract it into your out/target/product/*yourdevice*/ folder so that it's in project-rootstock-ng. Make sure that rootstock-touch-install is executable.
+Download that, extract it into your out/target/product/[DEVICE]/ folder so that it's in project-rootstock-ng. Make sure that rootstock-touch-install is executable.
 Copy your downloaded prebuilt image to your build directory, usually ~/phablet/out/target/product/[DEVICE]/
 
 # Installing
@@ -50,7 +48,7 @@ adb devices
 ```
 To make sure your device appears. If it does, we're good to go. If it doesn't, it's time to ask someone because we haven't written docs for that quite yet.
 
-Next, run 
+Next,
 ```
 adb shell
 ```
