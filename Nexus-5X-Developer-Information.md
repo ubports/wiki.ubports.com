@@ -12,6 +12,8 @@ Please remember to make a complete backup of your phone before doing any flashin
 
 Bullhead is currently in a booting state, but not graphically. After following these directions, you will be able to use telnet to get into a shell session on the device so that you can debug libhybris and whatever else tickles your fancy.
 
+Dalton is currently trying to build an updated version of libhybris with Marshmallow support. Until this is done, Ubuntu Touch will not work on this phone.
+
 ## Current Goals
 
 Get ADB running
