@@ -1,12 +1,8 @@
-## This page is in progress!
-
-Yeah, you heard me. Some of this information might be incomplete or downright wrong.
-
 This article was originally going to contain instructions for getting sources from other manufacturers' open source repositories as well, but I quickly decided against that after looking at Motorola's GitHub. It's a mess.
 
 The Android source tree is all of the code and prebuilt binaries that go into your device's Android build. Your tree is going to be the most important part of your building journey, so it's important to set it up right!
 
-You can go and read the beginning of [TODO: Link completed CM12.1 page], up to the information about getting your branch. That's where this document will take off.
+You can go and read the beginning of [[Setting-up-Your-Tree-for-CM12.1-Devices]], up to the information about getting your branch. That's where this document will take off.
 
 ### Who is this document for?
 
