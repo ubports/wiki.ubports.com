@@ -1,3 +1,5 @@
+Please note that Libhybris is currently not working for any Marshmallow device.
+
 This article was originally going to contain instructions for getting sources from other manufacturers' open source repositories as well, but I quickly decided against that after looking at Motorola's GitHub. It's a mess.
 
 The Android source tree is all of the code and prebuilt binaries that go into your device's Android build. Your tree is going to be the most important part of your building journey, so it's important to set it up right!
