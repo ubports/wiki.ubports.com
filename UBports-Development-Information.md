@@ -8,7 +8,7 @@ Android 6.0.x (in the official Google tree, Currently broken)
 ### Setting up your source tree
 This information will differ based on the type of device you want to port to.
 
-[CM12.1](https://wiki.ubports.com/wiki/(Incomplete)-Setting-up-your-Tree-for-CM12.1-devices)
+[CM12.1](https://wiki.ubports.com/wiki/Setting-up-Your-Tree-for-CM12.1-Devices)
 [Android 6.0.x](https://wiki.ubports.com/wiki/Setting-Up-your-Tree-for-Nexus-%2B-Pixel-Devices) (Nexus or Pixel devices with Android Marshmallow only)
 
 ### Installing your Build
