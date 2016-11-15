@@ -91,7 +91,7 @@ If you're not using the UBPorts source, add this to between the `<manifest>` and
 Next, we'll fill the manifest with information. Start with your device repository. Create the following line between the `<manifest>` and `</manifest>` tags, replacing the information inside the square brackets with your own.
 
 ```xml
-<project path="device/[manufacturer]/[device]" name="[repository name]" remote="cm" revision="cm12.1" />
+<project path="device/[manufacturer]/[device]" name="[repository name]" remote="cm" revision="cm-12.1" />
 ```
 
 The manufacturer and device codename should be the same as they are in the repository name.
@@ -101,7 +101,7 @@ The manufacturer and device codename should be the same as they are in the repos
 Now create more lines like the previous, using the cm.dependencies file you found earlier in your device repository. This file lists all of the other repositories that you need to build for your selected device. It's listed in a fairly straightforward way, so create a line for each of the entries in there using the following template.
 
 ```xml
-<project path="[target_path]" name="[repository]" remote="cm" revision="cm12.1" />
+<project path="[target_path]" name="[repository]" remote="cm" revision="cm-12.1" />
 ```
 
 And that should be it. Run `repo sync` to download all of the juicy sources for your tree. This will take a while as it must download anywhere from 12 to 18GB of files.
