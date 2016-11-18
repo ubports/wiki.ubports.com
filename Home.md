@@ -2,8 +2,8 @@
 
 ![Oneplus one](https://ubports.com/img/opo.jpg)
 
-Are you interested in Ubuntu touch? Does it look like something you would use as a daily driver? or may you just be curious on what this all is about.
+Are you interested in Ubuntu touch? Does it look like something you would use as a daily driver? Or maybe you're just curious on what all of this is about.
 
-The problem is that it the support for devices is limited to a small amount of devices... This is what we want to change, we will do everything we can to make this a accessible to a wide amount of devices.
+The problem is that Ubuntu Touch support for devices is limited... which we want to change! We will do everything we can to make Ubuntu Touch accessible on a wide range of devices.
 
-So what we will do to reach this goal is to include everyone that want to help, and work as a team! We want developers to go together and share knowledge, that way we will be able to learn for each others and solve problem together!
+To accomplish this goal, we will work as a team and include everyone that wants to help. We want developers to come together and share their knowledge, allowing us to learn from each other and solve problems together!
