@@ -8,7 +8,7 @@ Android 6.0.x (in the official Google tree, Currently broken)
 ### Setting up your source tree
 This information will differ based on the type of device you want to port to.
 
-[[CM12.1|Setting up your Tree for CM12.1 Devices]]
+[[CM12.1|Setting up Your Tree for CM12.1 Devices]]
 [[Android 6.0.x|Setting Up your Tree for Nexus + Pixel Devices]]
  (Nexus or Pixel devices with Android Marshmallow only)
 
