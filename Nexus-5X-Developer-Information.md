@@ -74,9 +74,7 @@ If that completes, congrats! You've built the Android system for Ubuntu Touch. L
 
 ## Flash n' burn
 
-Actually, assuming you're using TWRP, you don't need to flash anything. Just enable ADB in your running Android system, plug it in to your computer, and allow the connection. Then TWRP will allow you to use ADB from inside of it.
-
-If you're not using TWRP, reboot your phone into Fastboot (Power + Volume Down when powering on) and run the following commands. Please have a backup of your phone that is copied to somewhere other than your phone before doing this.
+Reboot your phone into Fastboot (Power + Volume Down when powering on) and run the following commands. Please have a backup of your phone that is copied to somewhere other than your phone before doing this.
 
 ```
 cd ~/phablet/out/target/product/bullhead/
