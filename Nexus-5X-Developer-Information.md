@@ -39,7 +39,7 @@ Start with `repo init -u https://github.com/usb-bullhead-ubuntu-touch/android.gi
 
 ## Patch things that I can't
 
-There's a generic initramfs that you'll need to download and place at `~/phablet/ubuntu/initrd/ubuntu_prebuilt_initrd/initrd.img-touch` in order to get a debugging Telnet connection. You can find it [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE)
+There's a generic initramfs that you'll need to download and place at `~/phablet/ubuntu/ubuntu_prebuilt_initrd/initrd.img-touch` in order to get a debugging Telnet connection. You can find it [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE)
 
 ## Build the Kernel
 
