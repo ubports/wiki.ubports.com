@@ -4,7 +4,7 @@ Today I'll be discussing building Hybris for your device. You can use this to te
 
 This guide focuses on building Hybris for a 32-bit arm environment. You'll need to change an autogen.sh argument in order to build for arm64 or another platform. Note that you'll need a newer version of Hybris than Ubuntu Touch provides to use arm64.
 
-# Setting up your environment
+## Setting up your environment
 
 If you're reading this, it probably means you have a build environment set up for your Android or Android-like port. In that case, you have everything you need to build Hybris. If you don't, though, here's a bunch of packages:
 
