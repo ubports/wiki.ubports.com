@@ -46,8 +46,10 @@ Where `/path/to/libhybris/hybris` is the hybris/ directory inside of your Libhyb
 Now that we have the headers, we're ready to configure hybris and build it. Change into the hybris/ directory.
 
 ```
-./autogen.sh --enable-arch=arm --with-default-egl-platform=hwcomposer --enable-debug --enable-trace --with-default-hybris-ld-library-path=/system/lib:/vendor/lib --with-android-headers=./android-headers
+./autogen.sh --enable-wayland --enable-arch=arm --with-android-headers=./android-headers  --enable-property-cache --enable-debug --enable-trace
 ```
+
+If you're compiling for a Mali GPU, you might consider adding `--enable-mali-quirks`. You may add ` --enable-experimental` if the regular build doesn't work.
 
 This configures a hybris build with all debugging capabilities, turns on the Ubuntu Touch default egl platform, selects where the linked libraries shall be, tells it where your headers are, and cross-compiling for ARM.
 
