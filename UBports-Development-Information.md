@@ -19,3 +19,7 @@ This information will differ based on the type of device you want to port to.
 ### Miscellaneous things you can do after you have a booting device
 
 [Setting up Wi-Fi from the command line](https://wiki.ubports.com/wiki/Commandline-networking-with-Network-Manager)
+
+### Advanced Topics
+
+[[Building Hybris]]
