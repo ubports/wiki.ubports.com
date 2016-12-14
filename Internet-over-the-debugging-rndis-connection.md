@@ -8,7 +8,7 @@ First, find the name of the interface you're using for your internet connection 
 sudo sysctl net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o [if] -j MASQUERADE
 sudo iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
-sudo iptables -A FORWARD -i net0 -o [if] -j ACCEPT
+sudo iptables -A FORWARD -i [pf] -o [if] -j ACCEPT
 ```
 
 Then, using your telnet connection to your phone, run the following command:
