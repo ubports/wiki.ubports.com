@@ -2,7 +2,7 @@ If you're porting to a device using the rndis debugging connection but haven't g
 
 I assume you're running Ubuntu >=16.04 for these instructions. Earlier versions of Ubuntu or other distros will probably work if iptables is installed.
 
-First, find the name of the interface you're using for your internet connection using `ifconfig`. Also note your PC's IP on the rndis network, `192.168.2.*`. You'll need them for the following commands. Run the following in order on your host machine, replacing `[if]` with your internet interface's name.
+First, find the name of the interface you're using for your internet connection using `ifconfig`. We'll call this `[if]` from here. Also note your PC's IP on the rndis network, `192.168.2.*`. Finally, note the interface name for the rndis network. We'll call that `[pf]`. You'll need them for the following commands. 
 
 ```
 sudo sysctl net.ipv4.ip_forward=1
