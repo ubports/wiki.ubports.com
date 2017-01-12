@@ -24,7 +24,8 @@ We're currently experimenting with the GUI since we're experiencing screen corru
 
 ## Current goals
 
-GSM data and audio are not functional
+GSM data is not functional
+Incoming call doesn't show an OSD, but notifies you once it's been missed
 GPS is not functional
 
 ## Building
@@ -89,19 +90,7 @@ sudo fastboot flash recovery recovery.img
 
 Now, we can't use Rootstock to install these images since UBPorts' Ubuntu Touch is patched slightly. Do the following to finish the flashing process:
 
-1. Use [Magic Device Tool](https://github.com/MariusQuabeck/magic-device-tool/) or ubuntu-device-flash to put Ubuntu Touch onto your phone
-1. After the phone has booted into Ubuntu Touch, reboot into recovery
-1. Run the following from the directory that your system.img is in:
-
-```
-adb shell "mount -a"
-adb shell "mkdir /image"
-adb shell "mount /data/system.img /image"
-adb push system.img /image/var/lib/lxc/android/system.img
-adb reboot
-```
-
-Then you can reboot your phone to have your shiny new system.img
+[[Flashing a New Android Image to a UBPorts Device]]
 
 ## That is it.
 
