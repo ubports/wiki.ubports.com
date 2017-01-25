@@ -44,7 +44,7 @@ g++-4.8-multilib phablet-tools```
 
 Simple, as always.
 
-Start by creating yourself a development directory, then move into it. Run `repo init -u https://github.com/ubports/android5 -b ubp-5.1 --depth=1` in this directory.
+Start by creating yourself a development directory, then move into it. Run `repo init -u https://github.com/ubports/android -b ubp-5.1 --depth=1` in this directory.
 
 Next, `mkdir .repo/local_manifests`, then create the file `.repo/local_manifests/fp2.xml`. Paste the following into the file:
 
