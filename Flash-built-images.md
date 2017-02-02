@@ -1,3 +1,6 @@
+(psst, maybe you should try this page instead: [[Installing Your Build With Rootstock]])
+
+
 This is the exiting part, trying out your freshly built images!
 
 <!--
