@@ -4,9 +4,11 @@ So, you've got your Ubuntu Touch image ready to go. Now what? Should you create 
 # MAKE A BACKUP!
 This is important. Don't skip it. Back up your phone, including the Boot/ and Recovery/ partitions. Don't enable compression. Also have images of your ROM of choice available so you can flash them if things go awry. Copy these backups to your computer and make sure you have images of boot and recovery that can be flashed with fastboot! This is easy with TWRP as it saves them as boot.emmc.win and recovery.emmc.win, respectively. YMMV with other Recoveries.
 
+Consider separating your development device and everyday use device. Having them be the same device is a waste of time and will likely lead to you losing data (as I did).
+
 # Set up your environment
 
-As always, the first thing we'll need to do is get you set up to follow the guide.
+As always, the first thing we'll need to do is get you set up to follow the guide. I'm assuming that you're using Ubuntu 16.04, as that's what I made these instructions on. Older or newer versions may work, I haven't tested.
 
 ## Download your preinstalled image
 The stuff that you've built is just the Android system that Ubuntu Touch runs on top of. The actual Ubuntu Touch system is packaged into what is known as a "Preinstalled Image" and you'll use that along with your Android build to run the operating system.
