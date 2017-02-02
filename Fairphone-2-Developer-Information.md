@@ -13,20 +13,17 @@ Please remember to make a complete backup of your phone before doing any flashin
 Current devel rc proposed builds:
 GUI -> Working
 Wifi -> Working
-Audio -> working
-Camera ->working
+Audio -> Working
+Camera -> Working
 Bluetooth -> Working
-GSM -> Partial (Registration and SMS work, incoming calls and data do not)
+GSM -> Working
 Motion sensor ->Working
 GPS -> WIP
 
-We're currently experimenting with the GUI since we're experiencing screen corruption caused by an interaction between the Adreno drivers, Libhybris, and Mir.
+## Current issues
 
-## Current goals
-
-GSM data is not functional
-Incoming call doesn't show an OSD, but notifies you once it's been missed
-GPS is not functional
+GPS is really slow
+Battery life could be improved
 
 ## Building
 
