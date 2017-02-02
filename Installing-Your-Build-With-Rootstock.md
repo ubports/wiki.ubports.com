@@ -23,7 +23,9 @@ Copy your downloaded prebuilt image to your build directory, usually ~/phablet/o
 
 
 ## Preparing the phone
-This part is a quick series of steps that should be easy to execute. First, boot your phone into Fastboot mode. You probably do this by holding down the power and volume down buttons to boot the phone, but your manufacturer may have changed that.
+Before beginning, ensure that your phone is not encrypted. If you have a phone that encrypts itself by default (like the Nexus 5X and 6P), you will need to factory reset it and go straight into these instructions without setting up the phone again. It goes without saying that this will erase all of the data from your phone.
+
+First, boot your phone into Fastboot mode. You probably do this by holding down the power and volume down buttons to boot the phone, but your manufacturer may have changed that.
 
 Then, run 
 ```
@@ -66,10 +68,10 @@ To ensure that Rootstock doesn't fail. You will probably see a lot of errors whe
 Finally, we'll need to run rootstock-touch-install
 
 ```
-sudo [path/to/rootstock-touch-install [path/to/]vivid-preinstalled-touch-armhf.tar.gz [path/to]/system.img 
+sudo [path/to/]rootstock-touch-install [path/to/]vivid-preinstalled-touch-armhf.tar.gz [path/to]/system.img 
 ```
 
-Rootstock should finish up then reboot your device. If it doesn't, you can get help at the UBPorts or Ubuntu Touch IRC.
+Rootstock should finish up, then reboot your device. If it doesn't, you can get help at the UBPorts or Ubuntu Touch IRC.
 
 
 
