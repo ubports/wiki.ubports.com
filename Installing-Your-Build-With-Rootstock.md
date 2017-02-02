@@ -25,22 +25,20 @@ Copy your downloaded prebuilt image to your build directory, usually ~/phablet/o
 ## Preparing the phone
 Before beginning, ensure that your phone is not encrypted. If you have a phone that encrypts itself by default (like the Nexus 5X and 6P), you will need to factory reset it and go straight into these instructions without setting up the phone again. It goes without saying that this will erase all of the data from your phone.
 
-First, boot your phone into Fastboot mode. You probably do this by holding down the power and volume down buttons to boot the phone, but your manufacturer may have changed that.
+If your phone is not encrypted, boot your phone into Fastboot mode. You probably do this by holding down the power and volume down buttons to boot the phone, but your manufacturer may have changed that.
 
 Then, run 
 ```
 fastboot devices
 ```
-Make sure that your device shows up. If it does, we're good to go
+Make sure that your device shows up. If it does, we're good to go.
 
-cd into your build directory, for me it's usually ~/phablet/out/target/product/[devicename]
-
-Then,
+cd into your build directory, then run
 ```	
-	sudo fastboot flash boot boot.img
-	sudo fastboot flash recovery recovery.img
+fastboot flash boot boot.img
+fastboot flash recovery recovery.img
 ```
-And boot into your recovery using your phone's preferred method.
+And boot into your recovery using your phone's preferred method. You might need to preface these commands with `sudo` if you get an endless `<waiting for device>` message.
 
 ## Installing the system
 
@@ -58,9 +56,9 @@ to enter your phone's shell.
 
 Once you're in, type these commands:
 ```
-	mount -a
-	mkdir recovery
-	exit
+mount -a
+mkdir recovery
+exit
 ```
 
 To ensure that Rootstock doesn't fail. You will probably see a lot of errors when running mount -a. This is acceptable.
