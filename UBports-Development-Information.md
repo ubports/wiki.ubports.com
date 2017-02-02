@@ -15,7 +15,7 @@ This information will differ based on the type of device you want to port to.
 ### Installing your Build
 
 [[Installing Your Build With Rootstock]]
-[[Flashing a New Android Image to a UBPorts Device]]
+[[Flashing a New Android Image to an Ubuntu Touch Device]]
 
 ### Miscellaneous things you can do after you have a booting device
 
