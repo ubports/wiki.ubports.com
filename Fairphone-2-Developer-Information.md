@@ -29,17 +29,17 @@ Battery life could be improved
 
 ### Install Prerequisites
 
-```sudo apt-get install git gnupg flex bison gperf build-essential \
+```
+sudo apt-get install git gnupg flex bison gperf build-essential \
 zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
 libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
 libgl1-mesa-dev g++-multilib tofrodos \
 python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-g++-4.8-multilib phablet-tools```
+g++-4.8-multilib phablet-tools
+```
 
 
 ### Set up the tree
-
-Simple, as always.
 
 Start by creating yourself a development directory, then move into it. Run `repo init -u https://github.com/ubports/android -b ubp-5.1 --depth=1` in this directory.
 
@@ -64,8 +64,6 @@ Then, run `repo sync -j4` (increase the job value if your computer and Internet 
 
 ### Build the source
 
-This is a simple operation.
-
 ```
 . build/envsetup.sh
 lunch cm_FP2-eng
@@ -88,7 +86,7 @@ sudo fastboot flash recovery recovery.img
 
 Now, we can't use Rootstock to install these images since UBPorts' Ubuntu Touch is patched slightly. Do the following to finish the flashing process:
 
-[[Flashing a New Android Image to a UBPorts Device]]
+[[Flashing a New Android Image to an Ubuntu Touch Device]]
 
 ## That is it.
 
