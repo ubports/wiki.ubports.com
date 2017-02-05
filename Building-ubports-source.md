@@ -23,7 +23,14 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
   g++-4.8-multilib
 ```
-
+### Step 2.1, Avoid repo erros.
+```
+mkdir ~/bin
+PATH=~/bin:$PATH
+cd ~/bin
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+```
 ### Step 3, Create a new directory and check out the ubp tree
 ```
 mkdir phablet && cd phablet/
