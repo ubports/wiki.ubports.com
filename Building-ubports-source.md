@@ -23,7 +23,7 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
   g++-4.8-multilib
 ```
-### Step 2.1, Avoid repo erros.
+### Step 2.1, Avoid repo errors.
 ```
 mkdir ~/bin
 PATH=~/bin:$PATH
