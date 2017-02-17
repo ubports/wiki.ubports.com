@@ -6,7 +6,6 @@ Install:
 * [[using recovery]]
 
 Development:
-* [[Building ubports source]]
 * [Porting to new device](https://developer.ubuntu.com/en/phone/devices/porting-new-device/)
 * [[UBports Development Information]]
 * [[Device Development Information]]
