@@ -2,7 +2,6 @@
 
 Install:
 * [[using system-server]]
-* [[using Multirom]]
 * [[using recovery]]
 
 Development:
