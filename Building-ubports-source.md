@@ -1,20 +1,20 @@
 This guide covers the basics of building certain portions of Android as they relate to Ubuntu Touch. The example device used in this guide is a OnePlus One.
 
+If you do not have a source tree yet, check out the "Setting up your source tree" heading on the [[UBports Development Information]] page.
+
 # Setting up the environment
 
-Setting up the environment is necessary before porting any device. Though it's not strictly necessary to use Ubuntu, you might run into problems by using different versions of software. This guide uses Ubuntu.
+Setting up the environment is necessary before porting any device. You should use Ubuntu for building any Android source, including this. To ensure that we can help you on the IRC or forums, ensure that you are using Ubuntu. If you do not use Ubuntu as your host OS, you should look into virtualizing a Ubuntu environment via LXC or a VM.
 
-If you do not use Ubuntu as your host OS, you should look into virtualizing a Ubuntu environment via LXC or a VM.
 
-## Using Ubuntu:
-### Step 1, Add the phablet-tools repository:
+### Add the phablet-tools repository:
 ```
 sudo add-apt-repository ppa:phablet-team/tools
 sudo apt-get update
 sudo apt-get install phablet-tools
 ```
 
-### Step 2, Installing build tools:
+### Install build tools:
 ```
 sudo apt-get install git gnupg flex bison gperf build-essential \
   zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -22,24 +22,6 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   libgl1-mesa-dev g++-multilib tofrodos \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
   g++-4.8-multilib
-```
-### Step 2.1, Avoid repo errors.
-```
-mkdir ~/bin
-PATH=~/bin:$PATH
-cd ~/bin
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-chmod a+x ~/bin/repo
-```
-### Step 3, Create a new directory and check out the ubp tree
-```
-mkdir phablet && cd phablet/
-repo init -u https://github.com/ubports/android -b ubp-5.1
-```
-
-### Setp 4, Sync repo
-```
-repo sync -j10
 ```
 
 
@@ -85,7 +67,7 @@ Lunch menu... pick a combo:
 
 Which would you like? [aosp_arm-eng] 
 ```
-Here you need to choose your device cm[your device]-userdebug, example if you were to build the oneplus one you would choose cm_bacon-eng or 7
+Here you need to choose your device cm[your device]-userdebug, example if you were to build the oneplus one you would choose cm_bacon-userdebug or 9
 
 ### Building your device
 Here comes the fun part, building the device it self using the command make
@@ -98,3 +80,4 @@ make -j4
 ```
 
 The output will be in out/target/[device]
+
