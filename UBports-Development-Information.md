@@ -12,6 +12,10 @@ This information will differ based on the type of device you want to port to.
 [[Android 6.0.x|Setting Up your Tree for Nexus + Pixel Devices]]
  (Nexus or Pixel devices with Android Marshmallow only)
 
+### Building
+
+[[Building ubports source]]
+
 ### Installing your Build
 
 [[Installing Your Build With Rootstock]]
