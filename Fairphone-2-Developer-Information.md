@@ -51,13 +51,12 @@ Next, `mkdir .repo/local_manifests`, then create the file `.repo/local_manifests
 
   <remote name="smoose"
         fetch="http://github.com/smoose-nils"
-        revision="refs/heads/ubp-5.1" >
+        revision="refs/heads/ubp-5.1" />
 
-  <project path="kernel/fairphone/FP2" name="android_kernel_fairphone_fp2" remote="ubp" />
-  <project path="device/fairphone/FP2" name="android_device_fairphone_fp2" remote="ubp"  />
+  <project path="kernel/fairphone/FP2" name="ubports/android_kernel_fairphone_fp2" remote="ubp" />
+  <project path="device/fairphone/FP2" name="ubports/android_device_fairphone_fp2" remote="ubp"  />
   <project path="device/qcom/common" name="android_device_qcom_common" remote="cm" />
   <project path="vendor/fairphone" name="proprietary_vendor_fairphone" remote="smoose"/>
-  </remote>
 </manifest>
 ```
 
