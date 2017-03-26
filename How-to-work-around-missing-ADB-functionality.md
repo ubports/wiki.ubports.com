@@ -1,27 +1,31 @@
 WORK IN PROGRESS!!!
 
-It seems that getting ADB access can be a nightmare sometimes, especially for devices that cannot boot into GUI.
+It seems that getting ADB access can be a nightmare sometimes, especially for devices that cannot boot into GUI. This guide will help you get that access.
 
 ## The easiest possibility: build properties ##
-Search your device tree for an .mk file which sets the default for the USB port:
+Search your device tree (use `grep -r "string"`) for an .mk file which sets the default for the USB port:
 
-    persist.sys.usb.config=mtp
+```
+persist.sys.usb.config=mtp
+```
 
 and change it to:
 
-    persist.sys.usb.config=mtp,adb
+```
+persist.sys.usb.config=mtp,adb
+```
 
-Clean your out directory from: boot.img, system & root folder. With a bit of luck that´s all you need to do. 
+It's recommended to do a full `make clean` at this point, though you could also remove the `boot.img`, `system/` & `root/` folders from `out/`.
 
 ## The hardest one: Bypass via RNDIS adapter & timed configuration job ##
-Thanks to Marius we also know about this method for some time. It is based on the possibility to switch the USB port to RNDIS mode after initrd has messed it up. Here are the steps:
+We took this method from Sailfish a little while ago, and it's a huge help during early porting - not just for ADB access, but also to diagnose early boot problems and the Android LXC container failing.
 
-- For this to work you need to grab a modified initrd from ubports - [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE).
-- copy this ramdisk to phablet/ubuntu/ubuntu_prebuilt_initrd as "initrd.img-touch"
-- Inject BOARD_USE_LOCAL_INITRD := true into your device BoardConfig.mk
-- Open your kernel config and find CONFIG_CMDLINE parameter, add "usb_debug" there
-- Probably you also want to set CONFIG_CMDLINE_EXTEND="y" as otherwise the bootloader will overwrite it.
-- make your tree.
+For this to work you need to grab a modified initrd from ubports - [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE). 
+- Copy this ramdisk to `phablet/ubuntu/ubuntu_prebuilt_initrd/` as `initrd.img-touch`
+- Inject `BOARD_USE_LOCAL_INITRD := true` into your device BoardConfig.mk. Without this, the build system will download an initramfs from Canonical.
+- Open your kernel config and find `CONFIG_CMDLINE` parameter, add `usb_debug` to the end of the string.
+- Probably you also want to set `CONFIG_CMDLINE_EXTEND="y"`. If you don't, the bootloader may ignore your options and use its own.
+- `make clean` and build.
 - go into recovery and flash the modified boot.img
 - It should stop at the boot logo. Connect via USB and see if your desktop recognizes an RNDIS adapter
 - On the first round, there will be dhcp available, so try to telnet to 192.168.2.15
