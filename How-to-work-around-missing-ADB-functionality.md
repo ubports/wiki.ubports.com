@@ -21,16 +21,16 @@ It's recommended to do a full `make clean` at this point, though you could also 
 We took this method from Sailfish a little while ago, and it's a huge help during early porting - not just for ADB access, but also to diagnose early boot problems and the Android LXC container failing.
 
 For this to work you need to grab a modified initrd from ubports - [here](https://drive.google.com/open?id=0B9Ee5skiHSnncUJBZERSS3IyWlE). 
-- Copy this ramdisk to `phablet/ubuntu/ubuntu_prebuilt_initrd/` as `initrd.img-touch`
-- Inject `BOARD_USE_LOCAL_INITRD := true` into your device BoardConfig.mk. Without this, the build system will download an initramfs from Canonical.
-- Open your kernel config and find `CONFIG_CMDLINE` parameter, add `usb_debug` to the end of the string.
-- Probably you also want to set `CONFIG_CMDLINE_EXTEND="y"`. If you don't, the bootloader may ignore your options and use its own.
-- `make clean` and build.
-- go into recovery and flash the modified boot.img
-- It should stop at the boot logo. Connect via USB and see if your desktop recognizes an RNDIS adapter
-- On the first round, there will be dhcp available, so try to telnet to 192.168.2.15
-- you should get into BusyBox minimalistic shell.
-- paste the following shellscript  into the console:
+1. Copy this ramdisk to `phablet/ubuntu/ubuntu_prebuilt_initrd/` as `initrd.img-touch`
+1. Inject `BOARD_USE_LOCAL_INITRD := true` into your device BoardConfig.mk. Without this, the build system will download an initramfs from Canonical.
+1. Open your kernel config and find `CONFIG_CMDLINE` parameter, add `usb_debug` to the end of the string.
+1. Probably you also want to set `CONFIG_CMDLINE_EXTEND="y"`. If you don't, the bootloader may ignore your options and use its own.
+1. `make clean` and build.
+1. Go into recovery and flash the modified boot.img. Reboot the phone normally. It will hang at the boot logo. 
+1. Connect via USB and see if your computer finds a new RNDIS Ethernet adapter. It will gain an IP on the 192.168.2.x/24 subnet.
+1. Telnet to 192.168.2.15
+1. You will almost immediately be presented with a root Busybox shell.
+1. paste the following into the console:
 
 ```bash
 cat <<EOF > start.sh
@@ -54,6 +54,6 @@ chmod +x start.sh
 ./start.sh &
 ```
 
-- You will loose now again the connection via RNDIS. Fear not, after the 15sec timer the script will try to reestablish it!
-- In the second round you will probably not have DHCP again. You need to manually configure your IP address e.g. 192.168.2.20/24
-- With some luck, you also get ADB! Try adb devices...
+1. You will loose now again the connection via RNDIS. After 15 seconds, the script will attempt to bring it back up. Watch your ifconfig or dmesg to see it reconnect.
+1. DHCP may not be functioning when RNDIS comes back up. If not, manually configure your IP address e.g. 192.168.2.20/24
+1. With some luck, you also get ADB! Try adb devices...
