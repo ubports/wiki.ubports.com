@@ -30,7 +30,7 @@ For this to work you need to grab a modified initrd from ubports - [here](https:
 1. Connect via USB and see if your computer finds a new RNDIS Ethernet adapter. It will gain an IP on the 192.168.2.x/24 subnet.
 1. Telnet to 192.168.2.15
 1. You will almost immediately be presented with a root Busybox shell.
-1. paste the following into the console:
+1. Paste the following into the console:
 
 ```bash
 cat <<EOF > start.sh
@@ -54,6 +54,6 @@ chmod +x start.sh
 ./start.sh &
 ```
 
-1. You will loose now again the connection via RNDIS. After 15 seconds, the script will attempt to bring it back up. Watch your ifconfig or dmesg to see it reconnect.
+1. You will lose the connection via RNDIS. After 15 seconds, the script will attempt to bring it back up. Watch your ifconfig or dmesg to see it reconnect.
 1. DHCP may not be functioning when RNDIS comes back up. If not, manually configure your IP address e.g. 192.168.2.20/24
 1. With some luck, you also get ADB! Try adb devices...
