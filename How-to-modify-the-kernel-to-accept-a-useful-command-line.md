@@ -35,12 +35,12 @@ Unfortunately this works only in theory. The EXTEND feature appends actually the
  #else
  ```
  
- This will modify the way the cmdline is loaded in such a way so that our cmdline comes AFTER the bootloader cmdline. Very neat!
+This will modify the way the cmdline is loaded in such a way so that our cmdline comes AFTER the bootloader cmdline. Very neat!
  
- Last issue: The length. Some bootloaders totally overload the cmdline string, so that any character we append might get eaten up. It´s true! What to do?
- 
- - Open your kernels /arch/arm/include/setup.h file and set:
- 
+Last issue: The length. Some bootloaders totally overload the cmdline string, so that any character we append might get eaten up. It´s true! What to do?
+
+Open your kernels /arch/arm/include/setup.h file and set:
+     
      #define COMMAND_LINE_SIZE 2048
  
- This should be enough even for the most blown bootloaders on this planet!
+This should be enough even for the most bloated bootloaders on this planet!
