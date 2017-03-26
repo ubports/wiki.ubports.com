@@ -6,6 +6,10 @@ Like you basically need at least the following parameter in your kernel command 
 
 (See [here](https://wiki.ubuntu.com/Touch/ContainerArchitecture) why, first few paragraphs)
 
+Or, your device has it´s data partition named in a strange way, so that Ubuntu will not recognize it. You can workaround this with:
+
+    datapart=/dev/mmcblk0p...
+    
 But here comes the problem: The bootloader itself wants to offload a ton of strange cmdline arguments and overwrites your cmdline string just before the kernel starts. So how to get it there then?
 
 - Go to your kernel config file
