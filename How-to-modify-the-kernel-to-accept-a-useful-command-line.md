@@ -10,7 +10,7 @@ Or, your device has it´s data partition named in a strange way, so that Ubuntu 
 
     datapart=/dev/mmcblk0p...
     
-But here comes the problem: The bootloader itself wants to offload a ton of strange cmdline arguments and overwrites your cmdline string just before the kernel starts. So how to get it there then?
+But here comes the problem: The bootloader itself wants to offload a ton of strange cmdline arguments and overwrites your cmdline string just before the kernel starts. Also, some device trees will have a kernel cmdline parameter in the BoardConfig.mk, but it still will get ignored during boot. The bootloader dominates everything. So how to get it there then?
 
 - Go to your kernel config file
 - Set CONFIG_CMDLINE="console=tty0"
