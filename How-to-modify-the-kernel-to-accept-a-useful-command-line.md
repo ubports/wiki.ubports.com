@@ -1,14 +1,8 @@
 Things can get really nasty with mobile devices. Say, you want to append a few things to the kernel command line for booting with special instructions.
 
-Like you basically need at least the following parameter in your kernel command line:
+For example, you need a `console=` option in your command line or Upstart will get upset with you (more info [here](https://wiki.ubuntu.com/Touch/ContainerArchitecture)). What, exactly, the parameter needs to be depends on your device... For Exynos devices, this might be a `ttySAC` guy. For Qualcomm, it might be a `ttyHS` device. Hopefully yours is set in your AOSP or CM repository. It'll be in BoardConfig.mk in any case.
 
-    console=tty0
-
-(See [here](https://wiki.ubuntu.com/Touch/ContainerArchitecture) why, first few paragraphs)
-
-Or, your device has it´s data partition named in a strange way, so that Ubuntu will not recognize it. You can workaround this with:
-
-    datapart=/dev/mmcblk0p...
+Maybe device has its data partition named in a strange way, so that Ubuntu will not recognize it. You can work around this with `datapart="/dev/mmcblk0p..."`
     
 But here comes the problem: The bootloader itself wants to offload a ton of strange cmdline arguments and overwrites your cmdline string just before the kernel starts. Also, some device trees will have a kernel cmdline parameter in the BoardConfig.mk, but it still will get ignored during boot. The bootloader dominates everything. So how to get it there then?
 
