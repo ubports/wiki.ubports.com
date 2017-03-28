@@ -21,7 +21,7 @@ You'll need a pre-existing device tree for your OS of choice. Since we at UBPort
 
 Hybris' repository includes two directories, hybris/ and utils/. The scrips in utils/ are essential to building Hybris. We'll be using one in particular, extract-headers.sh. This will take all of the important header files from your Android tree and place them in a folder of your choosing.
 
-To run it, let's CD into your hybris directory first. For Ubuntu touch, this is at `ubuntu/libhybris` in your Android tree.
+To run it, let's CD into your hybris utils directory first. For Ubuntu touch, this is at `ubuntu/libhybris/utils` in your Android tree.
 
 Then, make a directory in /tmp and use extract-headers.sh to extract your headers to it:
 
@@ -31,6 +31,8 @@ extract-headers.sh "/path/to/android/tree" "/tmp/android-headers"
 ```
 
 Where `/path/to/android/tree` is where your Android tree resides. For many Ubuntu Touch porters, this may be at `~/phablet`.
+
+**Note for Ubuntu users:** extract-headers.sh requires to use the bash shell. The default system redirection for /bin/sh is /bin/dash, which does not support all features of this shell script. Open up the script and change /bin/sh at the beginning to read /bin/bash!
 
 After this runs, you'll have what looks like a partial Android tree at /tmp/android-headers. Let's move it to the inside of the hybris/ folder.
 
