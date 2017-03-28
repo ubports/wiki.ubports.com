@@ -48,8 +48,10 @@ Where `/path/to/libhybris/hybris` is the hybris/ directory inside of your Libhyb
 Now that we have the headers, we're ready to configure hybris and build it. Change into the hybris/ directory.
 
 ```
-./autogen.sh --enable-wayland --enable-arch=arm --with-android-headers=./android-headers  --enable-property-cache --enable-debug --enable-trace
+./autogen.sh --enable-wayland --enable-arch=arm --with-android-headers=/path/to/libhybris/hybris/android-headers  --enable-property-cache --enable-debug --enable-trace
 ```
+
+**Note:** Substitute the path to the android headers with an *absolute* path since Makefiles on lower levels cannot deal with a relative one.
 
 If you're compiling for a Mali GPU, you might consider adding `--enable-mali-quirks`. You may add ` --enable-experimental` if the regular build doesn't work.
 
