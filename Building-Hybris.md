@@ -12,7 +12,7 @@ If you're reading this, it probably means you have a build environment set up fo
 sudo apt-get install git-core gnupg flex bison gperf build-essential \
   zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
-  libgl1-mesa-dev libxml2-utils xsltproc unzip dh-autoreconf
+  libgl1-mesa-dev libxml2-utils xsltproc unzip dh-autoreconf pkg-config
 ```
 
 You'll need a pre-existing device tree for your OS of choice. Since we at UBPorts are focused on Ubuntu Touch, that's what I'll be modeling.
