@@ -27,4 +27,4 @@ This information will differ based on the type of device you want to port to.
 
 ### Advanced Topics
 
-[[Building Hybris]]
+[[Building libhybris]]
