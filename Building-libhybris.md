@@ -17,6 +17,10 @@ sudo apt-get install git-core gnupg flex bison gperf build-essential \
 
 You'll need a pre-existing device tree for your OS of choice. Since we at UBPorts are focused on Ubuntu Touch, that's what I'll be modeling.
 
+## Get the sources
+
+While libhybris has a Github repository there is a fork from Canonical which seems to have some modifications inside that could be relevant to Ubuntu Touch. Recommended: Take the sources from [here](https://git.launchpad.net/~libhybris-maintainers/libhybris/+git/libhybris/). You can decide if you take the stable or the master branch. Current base for the vivid (15.04) image seems to be [this one](https://git.launchpad.net/~libhybris-maintainers/libhybris/+git/libhybris/commit/?id=6556a3faa4065c5ede1d0b2ad3bb4d9c45b6959f).
+
 ## Extract your libraries
 
 Hybris' repository includes two directories, hybris/ and utils/. The scrips in utils/ are essential to building Hybris. We'll be using one in particular, extract-headers.sh. This will take all of the important header files from your Android tree and place them in a folder of your choosing.
