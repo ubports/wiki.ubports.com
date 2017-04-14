@@ -1,7 +1,7 @@
 [[Home]]
 
 Install:
-* [[using system-server]]
+* [[Using the system-server]]
 * [[using recovery]]
 
 Development:
