@@ -13,6 +13,6 @@ Bug reporting
 * [[UBports Bug Trackers]]
 
 Links:
-* [Ubuntu's porting guide](https://developer.ubuntu.com/en/start/ubuntu-for-devices/porting-new-device/)
+* [Ubuntu Touch Wiki](https://wiki.ubuntu.com/Touch)
 * [Support us on Patreon](https://patreon.com/ubports/)
 * [Join us on Telegram](https://ubports.com/telegram)
