@@ -9,10 +9,10 @@ Development:
 * [[UBPorts Porting Information|UBports Development Information]]
 * [[Device Development Information]]
 
+Bug reporting
+* [[UBports Bug Trackers]]
+
 Links:
-* [Ubports home](https://ubports.com)
-* [Ubports devices](https://devices.ubports.com)
-* [Ubports blog](https://blog.ubports.com)
-* [Ubuntu wiki](https://wiki.ubuntu.com/Touch)
 * [Ubuntu's porting guide](https://developer.ubuntu.com/en/start/ubuntu-for-devices/porting-new-device/)
 * [Support us on Patreon](https://patreon.com/ubports/)
+* [Join us on Telegram](https://ubports.com/telegram)
