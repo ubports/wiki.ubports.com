@@ -18,4 +18,4 @@ If a bug is found to affect ALL UBports devices, it goes in this tracker.
 
 If there's an issue with the UBports website (ubports.com), report it at [its GitHub issue tracker](https://github.com/ubports/ubports.com/issues). This could include anything from rendering problems to typos.
 
-There's also an [issue tracker for the blog](https://github.com/ubports/blog.ubports.com) and [another for this wiki](https://github.com/ubports/wiki.ubports.com).
+There's also an [issue tracker for the blog](https://github.com/ubports/blog.ubports.com), [the devices page](https://github.com/ubports/devices.ubports.com/issues) and [another for this wiki](https://github.com/ubports/wiki.ubports.com).
