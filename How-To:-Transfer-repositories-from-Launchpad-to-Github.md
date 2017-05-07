@@ -1,6 +1,7 @@
 ### Preparations ###
 1. Install bazaar and git cmdline tools according to your OS/Distro
 2. Install (if necessary) the following bazaar extension:
+    bzr-fastimport
 
 ### Workflow ###
 3. Create an intermediate folder for bazaar and check out the project there:
