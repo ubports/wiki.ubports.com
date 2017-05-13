@@ -1,4 +1,4 @@
-**NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING**
+**NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done**
 
 1. Reboot to bootloader
 2. Download the unlocked adb recovery for your device
