@@ -1,9 +1,16 @@
+**NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING**
+
 1. Reboot to bootloader
 2. Download the unlocked adb recovery for your device
-3. Run Ubuntu device flash
+3. Run this Ubuntu device flash command
 
-ubuntu-device-flash --server=https://system-image.ubports.com/ touch
---channel=ubports-touch/legacy --bootstrap --recovery-image=[Downloaded adb recovery image]
+```
+ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
+--channel=ubports-touch/legacy --bootstrap \
+--recovery-image=[Downloaded adb recovery image]
+```
+
+**NOTE: UNTESTED DEVICES MIGHT RUN INTO UNEXPECTED ISSUES, PLEASE BE PREPARED TO FIX YOUR DEVICE**
 
 Unlocked adb recovery:
 
