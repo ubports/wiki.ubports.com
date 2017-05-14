@@ -1,8 +1,8 @@
 **NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done**
 
-1. Reboot to bootloader
+1. Reboot to bootloader (try holding volume down + power button)
 2. Download the unlocked adb recovery for your device
-3. Run this Ubuntu device flash command
+3. Run this Ubuntu device flash command (try with sudo):
 
 ```
 ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
