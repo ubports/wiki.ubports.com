@@ -1,4 +1,8 @@
-**NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done**
+**NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done. As a simple backup method you can use:**
+```
+rsync avz /home/phablet <user>@<server>:<dirname>/phablet
+```
+**to send all Apps data to your server of choice, and later reverse the process to restore the data. Then follow these steps:** 
 
 1. Reboot to bootloader (try holding volume down + power button)
 2. Download the unlocked adb recovery for your device
