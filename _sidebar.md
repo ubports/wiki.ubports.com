@@ -1,8 +1,9 @@
 [[Home]]
 
 Install:
+* [[How to flash existing ubuntu touch devices with Ubports images]]
 * [[Using the system-server]]
-* [[using recovery]]
+* [[Using Recovery|using recovery]]
 
 Development:
 * [Canonical Porting Guide](https://developer.ubuntu.com/en/phone/devices/porting-new-device/)
