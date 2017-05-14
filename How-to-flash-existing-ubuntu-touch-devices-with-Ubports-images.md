@@ -30,7 +30,7 @@ http://cdimage.ubports.com/devices/recovery-vegetahd.img
 
 BQ Aquaris M10 HD
 cooler
-Status: Unknown, Not tested
+Status: Works, tested
 http://cdimage.ubports.com/devices/recovery-cooler.img
 
 BQ Aquaris M10 FHD
