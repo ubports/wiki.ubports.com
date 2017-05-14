@@ -25,7 +25,7 @@ Adb recovery: http://cdimage.ubports.com/devices/recovery-krillin.img
 
 BQ Aquaris E5
 Codename: vegetahd
-Status: <span style="color:black">Unknown, Not tested</span>
+Status: <span style="color:green">Works, tested</span>
 Adb recovery: http://cdimage.ubports.com/devices/recovery-vegetahd.img
 
 BQ Aquaris M10 HD
@@ -35,7 +35,8 @@ Adb recovery: http://cdimage.ubports.com/devices/recovery-cooler.img
 
 BQ Aquaris M10 FHD
 Codename: frieza
-Status: <span style="color:black">Unknown, Not tested</span>
+Status: <span style="color:red">Update failes, tested</span>
+Update fails due to the recovery cahce is missing 15MB, a workaround is needed here
 Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza.img
 
 Meizu MX4
