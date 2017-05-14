@@ -1,6 +1,6 @@
 **NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done. As a simple backup method you can use:**
 ```
-rsync avz /home/phablet <user>@<server>:<dirname>/phablet
+rsync avz --delete /home/phablet <user>@<server>:<dirname>/phablet
 ```
 **to send all Apps data to your server of choice, and later reverse the process to restore the data. Then follow these steps:** 
 
