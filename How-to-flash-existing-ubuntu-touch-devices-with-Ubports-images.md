@@ -14,6 +14,8 @@ sudo ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
 --recovery-image=[Downloaded adb recovery image]
 ```
 
+Please [[file a bug report|UBports Bug Trackers]] if you have any problem.
+
 **NOTE: UNTESTED DEVICES MIGHT RUN INTO UNEXPECTED ISSUES, PLEASE BE PREPARED TO FIX YOUR DEVICE**
 
 ### Unlocked adb recovery:
