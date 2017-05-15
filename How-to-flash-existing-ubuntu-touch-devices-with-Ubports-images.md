@@ -43,7 +43,7 @@ Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza.img
 
 Meizu MX4
 Codename: m75/arale
-Status: <span style="color:black">Works, tested</span>
+Status: <span style="color:green">Works, tested</span>
 Adb recovery: http://cdimage.ubports.com/devices/recovery-arale.img
 
 Meizu PRO 5
