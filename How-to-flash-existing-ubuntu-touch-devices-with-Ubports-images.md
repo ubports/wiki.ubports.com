@@ -8,6 +8,8 @@ rsync avz --delete /home/phablet <user>@<server>:<dirname>/phablet
 2. Download the unlocked adb recovery for your device
 3. Run this Ubuntu device flash command:
 
+This will not work in a virtual machine.
+
 ```
 sudo ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
 --channel=ubports-touch/legacy --bootstrap \
