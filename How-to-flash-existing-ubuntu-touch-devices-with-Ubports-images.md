@@ -2,13 +2,11 @@
 ```
 rsync avz --delete /home/phablet <user>@<server>:<dirname>/phablet
 ```
-**to send all Apps data to your server of choice, and later reverse the process to restore the data. Then follow these steps:** 
+**to send all Apps data to your server of choice, and later reverse the process to restore the data. Then follow these steps (this will not work in a virtual machine):** 
 
 1. Reboot to bootloader (try holding volume (down, up or both) + power button)
 2. Download the unlocked adb recovery for your device
 3. Run this Ubuntu device flash command:
-
-This will not work in a virtual machine.
 
 ```
 sudo ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
