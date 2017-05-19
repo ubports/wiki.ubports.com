@@ -37,9 +37,8 @@ Adb recovery: http://cdimage.ubports.com/devices/recovery-cooler.img
 
 BQ Aquaris M10 FHD
 Codename: frieza
-Status: <span style="color:red">Update fails, tested</span>
-Update fails due to the recovery cache is missing 15MB, a workaround is needed here
-Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza.img
+Status: <span style="color:yellow">Status unknown, not tested</span>
+Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza-low-cache-workaround.img
 
 Meizu MX4
 Codename: m75/arale
