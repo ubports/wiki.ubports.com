@@ -13,7 +13,7 @@ You could be on a distro which hasn't in the repository LXD. No problem, if your
 I used the snap package to achieve the final result, but I suggest use your distro LXD package if you can. So first install snapd, then install LXD snap:
 "sudo apt-get install snapd"
 "sudo snap install lxd"
-Here is a deeper guide about the LXD snap package: https://stgraber.org/2016/10/17/lxd-snap-available/. If your are going to use the snap package, take a look there.
+Here is a deeper guide about the LXD snap package: https://stgraber.org/2016/10/17/lxd-snap-available/. If you are going to use the snap package, take a look there.
 Now we have lxd installed, let's configure it:
 "lxd init"
 Just press enter until the end for a standard set up.
