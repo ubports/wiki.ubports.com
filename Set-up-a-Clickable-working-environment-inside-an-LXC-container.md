@@ -1,11 +1,9 @@
-INTRODUCTION
-
 Clickable is the Brian Douglass' program to build, manage, install and in general develop for the Ubuntu Touch platform without the need of the whole ubuntu SDK.
 It can runs virtually in any linux environment (differently from the ubuntu SDK), but like me maybe also you encoutered problems setting up it in your favourite distro; here I am going to guide you throught setting up it in a LXC container.
 In this way you aren't forced to change distro or run an expansive virtual machine, but you can use clickable almost like a native set up.
 In this guide I consider using the apt package manager. Adapt the 'apt-get' commands to your circustances.
 
-SET UP LXD
+## Set up LXD
 
 We are going to use an ubuntu 16.04LTS container. To use it we have to install lxd, the lxc container hypervisor deamon. Install it.
 "sudo apt-get install lxd"
@@ -23,7 +21,7 @@ if you stumble in any strange error when running lxd commands, check if your use
 Another common issue could be to not have the lxd daemon running; if so just run:
 "sudo systemctl start lxd.service"
 
-SET UP THE CONTAINER
+## Set up the container
 
 Now create the ubuntu container:
 "lxc launch ubuntu:16.04 best_container_name_ever"
@@ -34,7 +32,7 @@ Before enter the new environment, we need to change some container policy option
 now you are ready to enter the matr...emm shell of our ubuntu container:
 "lxc exec best_container_name_ever -- /bin/bash"
 
-INSIDE THE CONTAINER
+## Inside the container
 
 First of all we need some basic utility:
 "apt-get update"
@@ -51,7 +49,7 @@ Step in our home directory
 "cd"
 Install and configure LXD. See the previous 'SET UP LXD' section, here is the same story.
 
-CONFIGURE CLICKABLE (INSIDE THE CONTAINER)
+### Configure clickable inside the container
 
 Here we are! Eventually you can download clickable:
 "git clone https://github.com/bhdouglass/clickable.git"
@@ -76,7 +74,7 @@ Now you can run clickable inside the lxc container without problems.
 For information about using clickable, see here: https://github.com/bhdouglass/clickable
 Note that Canonical server might not work, you can tell clickable to use a different image server with the 'USDK_TEST_REMOTE' environment variable.
 
-FINAL THOUGHTS
+## Final thoughts
 
 Clickable is a wonderful tool to develop app for ubuntu touch, thanks to Brian Douglass and all the devs for manteining it and for all the help they gave me :D
 Good coding everyone!!!
