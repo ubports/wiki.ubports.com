@@ -10,6 +10,9 @@ Development:
 * [[UBPorts Porting Information|UBports Development Information]]
 * [[Device Development Information]]
 
+App Development:
+* [[Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
+
 Bug reporting
 * [[UBports Bug Trackers]]
 
