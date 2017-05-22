@@ -4,6 +4,7 @@ Install:
 * [[How to flash existing ubuntu touch devices with Ubports images]]
 * [[Using the system-server]]
 * [[Using Recovery|using recovery]]
+* [[How to use adb from ubuntu desktop]]
 
 Development:
 * [Canonical Porting Guide](https://developer.ubuntu.com/en/phone/devices/porting-new-device/)
