@@ -37,8 +37,9 @@ Adb recovery: http://cdimage.ubports.com/devices/recovery-cooler.img
 
 BQ Aquaris M10 FHD
 Codename: frieza
-Status: <span style="color:yellow">Status unknown, not tested</span>
-Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza-low-cache-workaround.img
+Status: <span style="color:green">Works, tested</span>
+Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza.img
+*NOTE: this device seem to use little over 3 minutes to boot, we are looking into this issue https://bugs.launchpad.net/ubports-frieza/+bug/1693055*
 
 Meizu MX4
 Codename: m75/arale
