@@ -15,6 +15,7 @@ App Development:
 * [[Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
 
 Bug reporting
+* [[Writing a Good Bug-Report]
 * [[UBports Bug Trackers]]
 
 Links:
