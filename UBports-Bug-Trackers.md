@@ -2,21 +2,7 @@ This is a listing of UBports bug trackers and their purposes.
 
 ## Operating System
 
-If a bug is found to affect ALL UBports devices, it goes in this tracker. 
-
-[UBports System Image](https://bugs.launchpad.net/ubports-meta)
-
-Device-specific bug trackers are used to report problems that you find while using a device. This could include app or device crashes, hardware access issues, or other general wierdness that isn't found in other devices. If you find a bug that affects multiple devices but not *all* devices, report the bug in one of the devices that it affects then use the "Also affects" link to add the other device.
-
-* [Nexus 5 (hammerhead)](https://bugs.launchpad.net/ubports-n5)
-* [Oneplus One (bacon)](https://bugs.launchpad.net/ubports-opo)
-* [FairPhone 2 (FP2)](https://bugs.launchpad.net/ubports-fp2)
-* [BQ Aquaris E4.5 (krillin)](https://bugs.launchpad.net/ubports-krillin)
-* [BQ Aquaris E5 (vegetahd)](https://bugs.launchpad.net/ubports-vegetahd)
-* [BQ Aquaris M10 HD (cooler)](https://bugs.launchpad.net/ubports-cooler)
-* [BQ Aquaris M10 FHD (frieza)](https://bugs.launchpad.net/ubports-frieza)
-* [Meizu MX 4 (arale)](https://bugs.launchpad.net/ubports-arale)
-* [Meizu Pro 5 (turbo)](https://bugs.launchpad.net/ubports-turbo)
+Issues with the operating system are tracked [here](https://github.com/ubports/ubports-touch). Please read the Guide on [[Writing a Good Bug-Report]] and state the device you're using as well as the channel and version you are currently running. Provide steps to reproduce and a specific description of the issue you're experiencing.
 
 ## Core Apps
 
