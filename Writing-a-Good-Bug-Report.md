@@ -10,13 +10,13 @@ Open up the bug tracker for your device as well as the UBports System Image. You
 
 First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported on your device and the UBports System Image. When searching, use a few words that describe what you're seeing. For example, "Lock screen transparent" or "Lock screen shows activities".
 
-If you find that a bug report already exists, click the "This bug affects *x* people" link and select the option that applies to you. If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug.
+If you find that a bug report already exists, select the "Add your Reaction" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug.
 
+If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug.
 
 ## Reproduce the issue you've found
 
 Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. [If not...](https://youtu.be/nn2FB1P_Mn8?t=10s)
-
 
 ## Determine where the bug lies
 
@@ -72,14 +72,14 @@ Now it's time for what you've been waiting for, the bug report itself!
 
 First, pull up the bug tracker for your device and click "Report a bug" in the left column. Log in to Launchpad if you need to.
 
-Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough. If Launchpad thinks your bug is similar to another, it'll tell you and show you the previous bug reports. If any of the suspected matches are the problem you're experiencing, select them and follow the steps in the above "Check if the bug report already exists". If none of the suspected matches are the same as what you're trying to report, select the button specifying that.
+Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough.
 
 Now, write your bug report. A good bug report includes the following:
 
 * **What happened**: A synopsis of the erroneous behavior
 * **What I expected to happen**: A synopsis of what should have happened, if there wasn't an error
 * **Steps to reproduce**: You wrote these down earlier, right?
-* **Logs**: Attach your logs by selecting the "Extra Options" link, then clicking "Browse" to find your log.
+* **Logs**: Attach your logs by clicking and dragging them into your GitHub issue.
 * **Software Version**: Go to (Settings - About) and list what appears on the "OS" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone.
 
 Once you're finished with that, post the bug. A developer or triager will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
