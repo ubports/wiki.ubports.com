@@ -7,7 +7,7 @@ sudo apt install openssh-server
 3. Ensure your phone can connect to your backup destination (e.g. both in same LAN)
 4. Backup your phone
 ```
-rsync -avz --delete /home/phablet <user>@<server>:<dirname>/phablet
+rsync -avz --delete /home/phablet/ <user>@<server>:<dirname>/phablet/
 ```
 **to send all Apps data to your server of choice, and later reverse the process to restore the data. Then follow these steps (this will not work in a virtual machine):** 
 
