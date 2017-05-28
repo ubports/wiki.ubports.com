@@ -56,7 +56,7 @@ This log will be located at `UTlogcat.log` in your current working directory, so
 
 Now it's time for what you've been waiting for, the bug report itself!
 
-First, pull up the bug tracker for your device and click "Report a bug" in the left column. Log in to Launchpad if you need to.
+First, pull up the bug tracker and click "New Issue". Log in to GitHub if you haven't yet.
 
 Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough.
 
