@@ -6,9 +6,9 @@ This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and m
 
 ## Check if the bug report already exists
 
-Open up the bug tracker for your device as well as the UBports System Image. You can find the links here: [[UBports Bug Trackers]]
+Open up the bug tracker for [ubports-touch](https://github.com/ubports/ubports-touch).
 
-First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported on your device and the UBports System Image. When searching, use a few words that describe what you're seeing. For example, "Lock screen transparent" or "Lock screen shows activities".
+First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, "Lock screen transparent" or "Lock screen shows activities".
 
 If you find that a bug report already exists, select the "Add your Reaction" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug.
 
@@ -17,20 +17,6 @@ If the report is missing any of the information specified later in this document
 ## Reproduce the issue you've found
 
 Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. [If not...](https://youtu.be/nn2FB1P_Mn8?t=10s)
-
-## Determine where the bug lies
-
-The next step to reporting a good bug is figuring out where to report it!
-
-If you know that a bug occurs in a specific software component (such as lockscreen issues, which are probably the fault of unity8-greeter), report the bug on that component's bug tracker. Include logs from `/var/log` for that component, if applicable. They will be named appropriately.
-
-If you're not sure which component causes a bug, you should consider whether or not the bug only occurs on your model of device.
-
-If you know that a bug only occurs on your device model (or you aren't sure), report the bug on its ubports-*devicename* repository.
-
-If you think or know that a bug occurs on ALL UBports devices, report it in the ubports-meta (UBports System Image) project.
-
-Again, you can check following article for links to all of our bug trackers: [[UBports Bug Trackers]]
 
 ## Getting Logs
 
@@ -82,4 +68,6 @@ Now, write your bug report. A good bug report includes the following:
 * **Logs**: Attach your logs by clicking and dragging them into your GitHub issue.
 * **Software Version**: Go to (Settings - About) and list what appears on the "OS" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone.
 
-Once you're finished with that, post the bug. A developer or triager will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
+Once you're finished with that, post the bug. You'll get the option to add tags, so add the tag for the device you're experiencing the issue on.
+
+A developer or triager will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!
