@@ -1,4 +1,11 @@
 **NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done or you use this backup method:**
+1. Ensure ssh-server is installed on backup destination
+```
+sudo apt install openssh-server
+```
+2. Create the destination folder on your backup destination
+3. Ensure your phone can connect to your backup destination (e.g. both in same LAN)
+4. Backup your phone
 ```
 rsync -avz --delete /home/phablet <user>@<server>:<dirname>/phablet
 ```
