@@ -7,7 +7,7 @@ Install:
 * [[How to use adb from ubuntu desktop]]
 
 Development:
-* [Canonical Porting Guide](https://developer.ubuntu.com/en/phone/devices/porting-new-device/)
+* [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
 * [[UBPorts Porting Information|UBports Development Information]]
 * [[Device Development Information]]
 
