@@ -46,7 +46,8 @@ BQ Aquaris M10 FHD
 Codename: frieza
 Status: <span style="color:green">Works, tested</span>
 Adb recovery: http://cdimage.ubports.com/devices/recovery-frieza.img
-*NOTE: this device seem to use little over 3 minutes to boot, we are looking into this issue https://bugs.launchpad.net/ubports-frieza/+bug/1693055*
+*If flashing fails, try [this](https://forums.ubports.com/topic/263/can-t-get-the-m10-fhd-to-take-the-flash/3).*
+*NOTE: this device seem to use little over 3 minutes to boot, [we are looking into this issue](https://github.com/ubports/ubports-touch/issues/53)*
 
 Meizu MX4
 Codename: m75/arale
