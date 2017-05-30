@@ -5,7 +5,7 @@ In this guide I consider using the apt package manager. Adapt the 'apt-get' comm
 
 ## Set up LXD
 
-We are going to use an ubuntu 16.04LTS container. To use it we have to install lxd, the lxc container hypervisor deamon. Install it.
+We are going to use an ubuntu 16.04 LTS container. To use it we have to install lxd, the lxc container hypervisor deamon. Install it.
 `sudo apt-get install lxd`
 You could be on a distro which doesn't have LXD in the repository. Don't worry, if your distro supports snap packages you can install the snap version of LXD.
 I used the snap package to achieve the final result, but I suggest you to use your distro LXD package if you can. So first install snapd, then install the LXD snap:
