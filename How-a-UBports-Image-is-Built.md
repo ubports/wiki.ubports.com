@@ -26,7 +26,7 @@ The vivid rootfs is built by creating an Ubuntu image with the following reposit
 
 1. [UBports Overlay](https://launchpad.net/~ubports-developers/+archive/ubuntu/overlay)
 2. [Stable Phone Overlay](https://launchpad.net/~ci-train-ppa-service/+archive/ubuntu/stable-phone-overlay)
-3. Ubuntu 15.04 Vivid repositores Actually these packages are the normal ones that are also used for the desktop distro ARE THEY STAYING HOSTED AT CANONICAL? OR DO WE HAVE TO MIRROR THEM?
+3. Ubuntu 15.04 Vivid repositories: These packages are the normal ones that are also used for the desktop distro
 
 All of this work is done by [rootstock-ng](https://github.com/ubports/rootstock-ng) on [our CI server](http://ci.ubports.com/job/vivid-rootfs-armhf/). The image is then signed using our release key and sent to the system-image server, ready for phones to download.
 
