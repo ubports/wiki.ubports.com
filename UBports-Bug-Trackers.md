@@ -7,6 +7,7 @@ Issues with the operating system are tracked [here](https://github.com/ubports/u
 ## Core Apps
 
 * [OpenStore](https://bugs.launchpad.net/openstore)
+* [Browser (Oxide)](https://github.com/ubports/webbrowser-component/issues)
 * [Telegram](https://github.com/yunit-io/telegram-app/issues)
 * [Music](https://github.com/ubports/music-app/issues)
 * [Messaging](https://github.com/ubports/messaging-app/issues)
