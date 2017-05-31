@@ -7,7 +7,7 @@ Currently the following groups of people showed interest:
  * Sailfish OS developers
  * UBports developers
  
- ## Cornerstones ##
+## Cornerstones ##
  The service shall be:
  
   * Lightweight
@@ -17,11 +17,11 @@ Currently the following groups of people showed interest:
   * Pluggable for various authentication schemes of clients & servers
   * Manageable to restrict abuse
   
-  ## Current status ##
-  ### SFOS ###
+## Current status ##
+### SFOS ###
   * SFOS has currently no working push implementation, but has a draft for it here: https://wiki.merproject.org/wiki/Middleware/PushNotifications
   
-  ### UBports ###
+### UBports ###
   * UBports inherits the push infra implementation from Ubuntu Touch, but the push servers will get turned off soon.
   * The local client on the phone is written in Go 
   * It can route local as well as remote notifications
