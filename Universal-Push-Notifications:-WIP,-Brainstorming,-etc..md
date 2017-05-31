@@ -23,7 +23,8 @@ Currently the following groups of people showed interest:
   
   ### UBports ###
   * UBports inherits the push infra implementation from Ubuntu Touch, but the push servers will get turned off soon.
-  * The local client on the phone is written in Go and can route local as well as remote notifications
+  * The local client on the phone is written in Go 
+  * It can route local as well as remote notifications
   * It is possible to either modify this client to follow a new approach or to enhance it with a companion process that delivers locally (But then the old functions should be deactivated)
   * The client requests a ticket from Ubuntu One (an OpenID provider) and passes this on to interested applications
   * Applications can use this ticket to send it on to App servers, which in turn will use it to deliver messages to the push server
