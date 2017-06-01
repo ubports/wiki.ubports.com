@@ -6,11 +6,13 @@
 
 ### Method 2 (udf from ubuntu):
 
-1. run
+1. Connect device to an PC
+2. Run from the connected PC
 `ubuntu-device-flash --server=http://system-image.ubports.com touch --channel=[channel]`
 
 ### Method 3 (udf from recovery):
 
-1. Reboot to recovery (you can use adb to do this `adb reboot recovery`)
-2. run
+1. Connect device to an PC
+2. Reboot to recovery (you can use adb to do this `adb reboot recovery`)
+3.  Run from the connected PC
 `ubuntu-device-flash --server=http://system-image.ubports.com touch --channel=[channel]`
