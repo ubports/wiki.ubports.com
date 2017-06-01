@@ -29,7 +29,7 @@ portcraft enable-adb
 
 ## Using rootstock installer
 
-1 Download latest vivid (it need to be vivid, never images does not yet work!) 
+1 Download latest vivid (it need to be vivid, newer images does not yet work!) 
 
 ARM (32 and 64 bit): http://cdimage.ubuntu.com/ubuntu-touch/vivid/daily-preinstalled/current/vivid-preinstalled-touch-armhf.tar.gz
 i386: http://cdimage.ubuntu.com/ubuntu-touch/vivid/daily-preinstalled/current/vivid-preinstalled-touch-i386.tar.gz
