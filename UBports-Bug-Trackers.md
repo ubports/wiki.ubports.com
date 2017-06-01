@@ -6,7 +6,7 @@ Issues with the operating system are tracked [here](https://github.com/ubports/u
 
 ## Core Apps
 
-* [OpenStore](https://bugs.launchpad.net/openstore)
+* [OpenStore](https://github.com/UbuntuOpenStore/openstore-meta)
 * [Browser (Oxide)](https://github.com/ubports/webbrowser-component/issues)
 * [Telegram](https://github.com/yunit-io/telegram-app/issues)
 * [Music](https://github.com/ubports/music-app/issues)
@@ -31,7 +31,7 @@ Issues with the operating system are tracked [here](https://github.com/ubports/u
 If there's an issue with any of the UBports websites (this could include anything from rendering problems to typos), please report it in the relevant issue tracker:
 
 * [ubports.com](https://github.com/ubports/ubports.com/issues)
-* [OpenStore](https://bugs.launchpad.net/openstore-web)
+* [OpenStore](https://github.com/UbuntuOpenStore/openstore-meta)
 * [devices.ubports.com](https://github.com/ubports/devices.ubports.com/issues)
 * [blog.ubports.com](https://github.com/ubports/blog.ubports.com)
 * [wiki.ubports.com](https://github.com/ubports/wiki.ubports.com).
