@@ -13,9 +13,10 @@ rsync -avz --delete /home/phablet/ <user>@<server>:<dirname>/phablet/
 
 1. Reboot to bootloader (try holding volume (down, up or both) + power button)
 2. Download the unlocked adb recovery for your device
-3. Run this Ubuntu device flash command:
+3. Install (if it isn't installed) and run ubuntu-device-flash:
 
 ```
+sudo apt install ubuntu-device-flash
 sudo ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
 --channel=15.04/rc --bootstrap \
 --recovery-image=[Downloaded adb recovery image]
