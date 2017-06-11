@@ -18,7 +18,7 @@ rsync -avz --delete /home/phablet/ <user>@<server>:<dirname>/phablet/
 ```
 sudo apt install ubuntu-device-flash
 sudo ubuntu-device-flash --server=https://system-image.ubports.com/ touch \
---channel=15.04/rc --bootstrap \
+--channel=15.04/stable --bootstrap \
 --recovery-image=[Downloaded adb recovery image]
 ```
 
