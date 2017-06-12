@@ -6,6 +6,10 @@ Install:
 * [[Using Recovery|using recovery]]
 * [[How to use adb from ubuntu desktop]]
 
+Info:
+
+
+
 Development:
 * [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
 * [[UBPorts Porting Information|UBports Development Information]]
