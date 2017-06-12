@@ -8,7 +8,7 @@ Install:
 
 Info:
 
-
+* [[Release Channels]]
 
 Development:
 * [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
