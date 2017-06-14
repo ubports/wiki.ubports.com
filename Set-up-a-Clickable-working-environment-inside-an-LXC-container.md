@@ -13,11 +13,11 @@ I used the snap package to achieve the final result, but I suggest you to use yo
 `sudo snap install lxd`
 Here is a deeper guide about the LXD snap package: https://stgraber.org/2016/10/17/lxd-snap-available/. If you are going to use the snap package, take a look there.
 Configure LXD:
-`lxd init`
+`sudo lxd init`
 Just press enter until the end for a standard set up.
 Troubleshooting:
 if you stumble in any strange error when running lxd commands, check if your user is in the lxd group, if not add yourself there:
-`usermod -a -G lxd username`
+`sudo usermod -a -G lxd username`
 Another common issue could be to not have the lxd daemon running; if so just run:
 `sudo systemctl start lxd.service`
 
@@ -39,14 +39,13 @@ First of all we need some basic utility:
 `apt-get install nano sudo git`
 These packages may be already installed, but who know?
 Next step is to configure a not root user. These commands should work, but I haven't tested them:
-`useradd mr_nice_guy`
-`passwd mr_nice_guy`
+`adduser mr_nice_guy`
 Enable him to run sudo
 `usermod -a -G sudo mr_nice_guy` // (Maybe this is not the most clean way to do it?)
 Now we are ready to being the nice guy.
 `su mr_nice_guy`
 Step in our home directory
-`cd`
+`cd $HOME`
 Install and configure LXD. See the previous 'SET UP LXD' section, here is the same story.
 
 ### Configure clickable inside the container
