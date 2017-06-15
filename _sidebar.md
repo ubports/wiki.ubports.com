@@ -2,8 +2,8 @@
 
 Install:
 * [[How to flash existing ubuntu touch devices with Ubports images]]
-* [[Using the system-server]]
-* [[Using Recovery|using recovery]]
+* [[Installation using UBports system-server]]
+* [[Installation using UBports Recovery]]
 * [[How to use adb from ubuntu desktop]]
 
 Info:
