@@ -39,18 +39,18 @@ Now, you can get the two most important logs.
 1. Using the steps you documented earlier, reproduce the issue you're reporting
 1. `cd` to a folder where you're able to write the log
 1. Delete the file `UTdmesg.log` if it exists
-1. Run the command: `adb shell "dmesg" > "UTdmesg.log"`
+1. Run the command: `adb shell "dmesg" > "UTdmesg.txt"`
 
-This log should now be located at `UTdmesg.log` under your working directory, ready for uploading later.
+This log should now be located at `UTdmesg.txt` under your working directory, ready for uploading later.
 
 ### logcat
 
 1. Using the steps you documented earlier, reproduce the issue you're reporting
 1. `cd` to a folder where you're able to write the log
 1. Delete the file `UTlogcat.log` if it exists
-1. Run the command: `adb shell "/android/system/bin/logcat -d" > UTlogcat.log`
+1. Run the command: `adb shell "/android/system/bin/logcat -d" > "UTlogcat.txt"`
 
-This log will be located at `UTlogcat.log` in your current working directory, so you'll be able to upload it later.
+This log will be located at `UTlogcat.txt` in your current working directory, so you'll be able to upload it later.
 
 ## Making the bug report
 
