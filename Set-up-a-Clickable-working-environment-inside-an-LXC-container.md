@@ -26,13 +26,13 @@ Another common issue could be to not have the lxd daemon running; if so just run
 ## Set up the container
 
 Now create the ubuntu container:
-`lxc launch ubuntu:16.04 best_container_name_ever`
+`lxc launch ubuntu:16.04 clickablecontainer`
 and lxc will automatically download and set up our new container.
 Before enter the new environment, we need to change some container policy options to enable nested lxc containers creation:
-`lxc config set best_container_name_ever security.privileged true`
-`lxc config set best_container_name_ever security.nesting true`
+`lxc config set clickablecontainer security.privileged true`
+`lxc config set clickablecontainer security.nesting true`
 now you are ready to enter the matr...emm shell of our ubuntu container:
-`lxc exec best_container_name_ever -- /bin/bash`
+`lxc exec clickablecontainer -- /bin/bash`
 
 ## Inside the container
 
