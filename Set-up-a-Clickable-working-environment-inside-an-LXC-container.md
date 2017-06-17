@@ -64,7 +64,7 @@ Install and configure LXD. See the previous 'SET UP LXD' section, here is the sa
 Here we are! Eventually you can download clickable:
 `git clone https://github.com/bhdouglass/clickable.git`
 Enter the master directory
-`cd clickable-master`
+`cd clickable`
 We have to install the usdk-target executable (bundled with clickable) to be able to create sdk ubuntu LXC containers with clickable.
 Inside the container we need to run sudo with the `-S` option, because without it will fail.
 `sudo -S cp usdk-target /bin`
