@@ -15,8 +15,9 @@ Here is a deeper guide about the LXD snap package: https://stgraber.org/2016/10/
 Configure LXD:
 `sudo lxd init`
 Just press enter until the end for a standard set up.
-Troubleshooting:
-if you stumble in any strange error when running lxd commands or lxc commands below, check if your user is in the lxd group, if not add yourself there:
+
+### Troubleshooting:
+If you stumble upon any strange error when running lxd commands or lxc commands below, check if your user is in the lxd group, if not add yourself there:
 `sudo usermod -a -G lxd username`
 You might have to log out and log back in afterwards for this to take effect.
 
