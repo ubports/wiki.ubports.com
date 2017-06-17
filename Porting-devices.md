@@ -31,7 +31,7 @@ chmod a+x ~/bin/repo
 ### Step 3, Create a new directory and download the ubp tree
 ```
 mkdir phablet
-repo init -u https://github.com/ubports/android -b ubp-5.1.1
+repo init -u https://github.com/ubports/android -b ubp-5.1
 ```
 
 
