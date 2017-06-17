@@ -16,7 +16,8 @@ Development:
 * [[Device Development Information]]
 
 App Development:
-* [[Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
+* [[Set up development environment]]
+* [[Set up development environment in a container|Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
 
 Bug reporting
 * [[Writing a Good Bug-Report]]
