@@ -28,6 +28,14 @@ Another common issue could be to not have the lxd daemon running; if so just run
 Now create the ubuntu container:
 `lxc launch ubuntu:16.04 clickablecontainer`
 and lxc will automatically download and set up our new container.
+
+### Troubleshooting
+If you get an error about apparmor (aa_allow_incomplete) change this setting and start the container again:
+```
+lxc config set clickablecontainer raw.lxc 'lxc.aa_allow_incomplete = 1'
+lxc start clickablecontainer 
+```
+
 Before enter the new environment, we need to change some container policy options to enable nested lxc containers creation:
 `lxc config set clickablecontainer security.privileged true`
 `lxc config set clickablecontainer security.nesting true`
