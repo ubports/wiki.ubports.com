@@ -1,6 +1,6 @@
 [Clickable](https://github.com/bhdouglass/clickable) is a program to support you with developing apps for the Ubuntu Touch platform. It is written by Brian Douglass and helps you to build, manage, install and test your app without the need of the whole Ubuntu SDK.
 
-This guide assumes you are using Ubuntu Xenial on your development machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try our alternative instructions to setup Clickable inside a container, or the [Clickable](https://github.com/bhdouglass/clickable) website for other alternatives like snap. 
+This guide assumes you are using Ubuntu Xenial on your development machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup [Clickable inside a container](https://wiki.ubports.com/wiki/Set-up-a-Clickable-working-environment-inside-an-LXC-container), or the [Clickable website](https://github.com/bhdouglass/clickable) for other alternatives like snap. 
 
 # Install 
 
