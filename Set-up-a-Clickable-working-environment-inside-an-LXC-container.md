@@ -49,7 +49,7 @@ First of all we need some basic utility:
 `apt-get update`
 `apt-get install nano sudo git`
 These packages may be already installed, but who know?
-Next step is to configure a not root user. These commands should work, but I haven't tested them:
+Next step is to configure a not root user:
 `adduser mr_nice_guy`
 Enable him to run sudo
 `usermod -a -G sudo mr_nice_guy` // (Maybe this is not the most clean way to do it?)
