@@ -83,6 +83,15 @@ Now you can run clickable inside the lxc container without problems.
 For information about using clickable, see here: https://github.com/bhdouglass/clickable
 Note that Canonical server might not work, you can tell clickable to use a different image server with the `USDK_TEST_REMOTE` environment variable.
 
+## First app
+Once the container is setup you can build and run your first app:
+
+`git clone https://github.com/bhdouglass/ut-app-template`
+`cd ut-app-template/`
+`clickable`
+
+This should build and start an app on your Ubuntu Touch device displaying "Hello World!"
+
 ## Final thoughts
 
 Clickable is a wonderful tool to develop app for ubuntu touch, thanks to Brian Douglass and all the devs for manteining it and for all the help they gave me :D
