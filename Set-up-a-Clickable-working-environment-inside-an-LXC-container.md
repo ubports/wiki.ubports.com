@@ -47,7 +47,7 @@ now you are ready to enter the matr...emm shell of our ubuntu container:
 
 First of all we need some basic utility:
 `apt-get update`
-`apt-get install nano sudo git`
+`apt-get install nano sudo git python`
 These packages may be already installed, but who know?
 Next step is to configure a not root user:
 `adduser mr_nice_guy`
