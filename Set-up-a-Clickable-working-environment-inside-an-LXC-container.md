@@ -1,6 +1,8 @@
-Clickable is the Brian Douglass' program to build, manage, install and in general develop for the Ubuntu Touch platform without the need of the whole ubuntu SDK.
-It can runs virtually in any linux environment (differently from the ubuntu SDK), but like me maybe also you encoutered problems setting up it in your favourite distro; here I am going to guide you throught setting up it in a LXC container.
-In this way you aren't forced to change distro or run an expansive virtual machine, but you can use clickable almost like a native set up.
+[Clickable](https://github.com/bhdouglass/clickable) is a program to support you with developing apps for the Ubuntu Touch platform. It is written by Brian Douglass and helps you to build, manage, install and test your app without the need of the whole Ubuntu SDK.
+
+If you use a recent version of Ubunut you can probably install Clickable without any problem directly on your system as described [[here|Set up an app development environment]]. However, if you encouter any problems setting this up it in your favourite distro, then this guide is for you. 
+
+This guide is for setting up Clickable in a LXC container. That way you can run Clickable in virtually any Linux environment (differently from the ubuntu SDK). No need to change distro or run an expensive virtual machine. You can use Clickable almost like a native set up.
 In this guide I consider using the apt package manager. Adapt the 'apt-get' commands to your circustances.
 
 ## Set up LXD
