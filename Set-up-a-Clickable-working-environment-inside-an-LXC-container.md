@@ -16,8 +16,10 @@ Configure LXD:
 `sudo lxd init`
 Just press enter until the end for a standard set up.
 Troubleshooting:
-if you stumble in any strange error when running lxd commands, check if your user is in the lxd group, if not add yourself there:
+if you stumble in any strange error when running lxd commands or lxc commands below, check if your user is in the lxd group, if not add yourself there:
 `sudo usermod -a -G lxd username`
+You might have to log out and log back in afterwards for this to take effect.
+
 Another common issue could be to not have the lxd daemon running; if so just run:
 `sudo systemctl start lxd.service`
 
