@@ -28,7 +28,7 @@ Now you are setup to build and run your first app:
 
 This should build and start an app on your Ubuntu Touch device displaying "Hello World!"
 
-## Final thoughts
+# Final thoughts
 
 Clickable is a wonderful tool to develop app for Ubuntu Touch. Thanks to Brian Douglass and all the devs for maintaining it and for all the help they gave :D
 Good coding everyone!!!
