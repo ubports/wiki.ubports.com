@@ -1,7 +1,7 @@
 Ubuntu Touch and now UBports is a modular, open system, so there are also multiple ways how to install it:
 
 ### Before you cry: Make a backup of your existing data ###
-* Use the magic device tool: https://github.com/MariusQuabeck/magic-device-tool - Please read the instructions carefully!
+* Use the magic device tool: https://github.com/MariusQuabeck/magic-device-tool - It has a backup option built in for all our supported devices. Please read the instructions carefully!
 
 ### Switch from Android, Canonical, or any other OS to UBports ###
 * Use the magic device tool: https://github.com/MariusQuabeck/magic-device-tool - Please read the instructions carefully!
