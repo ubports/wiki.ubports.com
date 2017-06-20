@@ -27,7 +27,7 @@ These instructions will help you install to a device that ran an official Canoni
 ***BE VERY CAREFUL!*** This can permanantly damage or brick your device. NEVER check the "Erase All" option in SP Flash Tool and carefully read everything that it tells you. Some users have destroyed the partition that holds their hardware IDs and can no longer connect to Wi-Fi or cellular networks.
 
 * BQ devices: Download the official firmware from [here](http://www.mibqyyo.com/en-download/) and use [SP Flash Tool](https://spflashtool.com/) to flash it
-* Meizu devices: [TODO]
+* Meizu devices: You are pretty much stuck on Flyme. There are some instructions floating around of downgrading your OS, gaining root with an exploit, unlocking your bootloader, and such. We aren't going to link to them here for obvious reasons. You're even more at your own risk on that one.
 
 ### Get help from other users and the UBports team
 
