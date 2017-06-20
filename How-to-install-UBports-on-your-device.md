@@ -35,7 +35,7 @@ These instructions will help you install to a device that ran an official Canoni
 * BQ devices: Download the official Ubuntu Edition firmware from [here](http://www.mibqyyo.com/en-download/) and use [SP Flash Tool](https://spflashtool.com/) to flash it.
 * Meizu devices: You are pretty much stuck on Flyme. There are some instructions floating around for downgrading your OS, gaining root with an exploit, unlocking your bootloader, and so on. We aren't going to link to them here for obvious reasons. You're even more at your own risk on that one.
 
-We are being vague with these instructions on purpose. While we appreciate that lots of people want to use our OS, flashing a device shouldn't be done without a bit of know-how and plenty of research.
+We are being vague with these instructions on purpose. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research.
 
 ### Get help from other users and the UBports team
 
