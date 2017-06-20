@@ -2,7 +2,7 @@ Ubuntu Touch and now UBports is a modular, open system, so there are also multip
 
 ## Before you cry: Make a backup of your existing data
 
-* Use the magic device tool: https://github.com/MariusQuabeck/magic-device-tool - It has a backup option built in for all our supported devices. Please read the instructions carefully!
+* Use the magic device tool: https://github.com/MariusQuabeck/magic-device-tool - It has a backup option built in for all our supported devices that are already running Ubuntu for Devices. Please read the instructions carefully!
 
 ## Non-Canonical devices
 
