@@ -8,13 +8,27 @@ If you have the Ubuntu SDK IDE install, you will already have the needed prerequ
 
 # Install 
 
-Download clickable 
+To install clickable, you can either install the Snap from the OpenStore or clone the GitHub repository.
+
+## Snap
+
+To install the snap, run:
+
+```
+wget https://open.uappexplorer.com/api/download/clickable/clickable_latest_amd64.snap && \
+sudo snap install --dangerous --classic clickable_latest_amd64.snap && \
+rm clickable_latest_amd64.snap
+```
+
+## GitHub
+
+To install from a cloned GitHub repository, run:
+
 `cd ~`
 `git clone https://github.com/bhdouglass/clickable.git`
 
 Add this repository on your PATH by adding the following line at the end of your `~/.bashrc` file:
 `export PATH=$PATH:~/clickable`
-
 
 # Configure
 
