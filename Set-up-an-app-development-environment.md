@@ -37,8 +37,12 @@ export PATH=$PATH:~/clickable
 
 # Configure
 
-Run 
-`clickable setup-lxd` 
+Run
+
+```
+clickable setup-lxd
+```
+
 to create a container which will be used for building your app.
 
 
