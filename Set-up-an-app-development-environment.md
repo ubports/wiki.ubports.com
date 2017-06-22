@@ -8,7 +8,7 @@ If you have the Ubuntu SDK IDE install, you will already have the needed prerequ
 
 # Install 
 
-To install clickable, you can either install the Snap from the OpenStore or clone the GitHub repository.
+You can get clickable by **either** installing the Snap from the OpenStore **or** cloning the GitHub repository.
 
 ## Snap
 
@@ -24,11 +24,16 @@ rm clickable_latest_amd64.snap
 
 To install from a cloned GitHub repository, run:
 
-`cd ~`
-`git clone https://github.com/bhdouglass/clickable.git`
+```
+cd ~ && \
+git clone https://github.com/bhdouglass/clickable.git
+```
 
 Add this repository on your PATH by adding the following line at the end of your `~/.bashrc` file:
-`export PATH=$PATH:~/clickable`
+
+```
+export PATH=$PATH:~/clickable
+```
 
 # Configure
 
@@ -38,13 +43,18 @@ to create a container which will be used for building your app.
 
 
 # First app
+
 Now you are setup to build and run your first app:
 
-`git clone https://github.com/bhdouglass/ut-app-template`
-`cd ut-app-template/`
-`clickable`
+```
+git clone https://github.com/bhdouglass/ut-app-template && \
+cd ut-app-template/ && \
+clickable
+```
 
 This should build and start an app on your Ubuntu Touch device displaying "Hello World!"
+
+Read on [here](https://github.com/bhdouglass/clickable#usage) for further instructions.
 
 # Final thoughts
 
