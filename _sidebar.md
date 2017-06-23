@@ -1,10 +1,13 @@
 [[Home]]
 
 Install:
+* [[How-to-install-UBports-on-your-device]]
+* [[How to use ADB from ubuntu desktop]]
+
+Old install pages (for reference only):
 * [[How to flash existing ubuntu touch devices with Ubports images]]
 * [[Installation using UBports system-server]]
 * [[Installation using UBports Recovery]]
-* [[How to use adb from ubuntu desktop]]
 
 Info:
 
