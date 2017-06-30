@@ -36,3 +36,7 @@ If there's an issue with any of the UBports websites (this could include anythin
 * [blog.ubports.com](https://github.com/ubports/blog.ubports.com/issues)
 * [stats.ubports.com](https://github.com/ubports/stats.ubports.com/issues)
 * [wiki.ubports.com](https://github.com/ubports/wiki.ubports.com/issues)
+
+## Summary
+
+You can also get a GitHub-wide list of all open [issues](https://github.com/search?utf8=%E2%9C%93&q=org%3Aubports+is%3Aissue+is%3Aopen&type=) or [pull requests](https://github.com/search?utf8=%E2%9C%93&q=org%3Aubports+is%3Apr+is%3Aopen&type=).
