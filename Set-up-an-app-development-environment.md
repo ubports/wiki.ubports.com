@@ -6,23 +6,9 @@ This guide assumes you are using Ubuntu Xenial on your development machine. Othe
 
 If you have the Ubuntu SDK IDE install, you will already have the needed prerequisites. If you don't already have the IDE installed you will need to install adb and lxd. After installing lxd you will need to run `lxd init` to get everything setup with lxd.
 
-# Install 
+# Install
 
-You can get clickable by **either** installing the Snap from the OpenStore **or** cloning the GitHub repository.
-
-## Snap
-
-To install the snap, run:
-
-```
-wget https://open.uappexplorer.com/api/download/clickable/clickable_latest_amd64.snap && \
-sudo snap install --dangerous --classic clickable_latest_amd64.snap && \
-rm clickable_latest_amd64.snap
-```
-
-## GitHub
-
-To install from a cloned GitHub repository, run:
+To install clickable from a cloned GitHub repository, run:
 
 ```
 cd ~ && \
