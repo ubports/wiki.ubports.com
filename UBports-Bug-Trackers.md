@@ -30,12 +30,8 @@ Issues with the operating system are tracked [here](https://github.com/ubports/u
 
 If there's an issue with any of the UBports websites (this could include anything from rendering problems to typos), please report it in the relevant issue tracker:
 
-* [OpenStore](https://github.com/UbuntuOpenStore/openstore-meta/issues)
-* [ubports.com](https://github.com/ubports/ubports.com/issues)
-* [devices.ubports.com](https://github.com/ubports/devices.ubports.com/issues)
-* [blog.ubports.com](https://github.com/ubports/blog.ubports.com/issues)
-* [stats.ubports.com](https://github.com/ubports/stats.ubports.com/issues)
-* [wiki.ubports.com](https://github.com/ubports/wiki.ubports.com/issues)
+* All things [ubports.com](https://github.com/ubports/ubports.com/issues)
+* [OpenStore](https://github.com/UbuntuOpenStore/openstore-meta/issues) website
 
 ## Summary
 
