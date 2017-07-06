@@ -56,34 +56,11 @@ Enable him to run sudo
 `usermod -a -G sudo mr_nice_guy` // (Maybe this is not the most clean way to do it?)
 Now we are ready to being the nice guy.
 `su mr_nice_guy`
-Step in our home directory
-`cd $HOME`
 Install and configure LXD. See the previous 'SET UP LXD' section, here is the same story.
 
-### Configure clickable inside the container
+## Configure Clickable inside the container
 
-Here we are! Eventually you can download clickable:
-`git clone https://github.com/bhdouglass/clickable.git`
-Enter the master directory
-`cd clickable`
-We have to install the usdk-target executable (bundled with clickable) to be able to create sdk ubuntu LXC containers with clickable.
-Inside the container we need to run sudo with the `-S` option, because without it will fail.
-`sudo -S cp usdk-target /bin`
-`sudo -S cp usdk-target /usr/bin`
-`sudo -S cp usdk-target /usr/sbin`
-`sudo -S cp usdk-target /sbin`
-I copyied it into all the four directoryes because I don't know in which one I should copy it; it's a quick-and-dirt solution, but I am too lazy.
-Now you need to patch the clickable executable. I said before that in this environment we have to run sudo with the `-S` option.
-`nano clickable`
-Look for the line:
-`subprocess.check_call(shlex.split('sudo {} usdk-target create -n {} -p {}'.format(env, name, fingerprint)))`
-And add the -S option. Here it is the result:
-`subprocess.check_call(shlex.split('sudo -S {} usdk-target create -n {} -p {}'.format(env, name, fingerprint)))`
-Save with `CTRL-o` and exit nano with `CTRL-x`.
-You have succeffully set up clickable inside an lxd container!
-Now you can run clickable inside the lxc container without problems.
-For information about using clickable, see here: https://github.com/bhdouglass/clickable
-Note that Canonical server might not work, you can tell clickable to use a different image server with the `USDK_TEST_REMOTE` environment variable.
+Now you can set up Clickable like in a normal system, following the guide [[here|Set up an app development environment]].
 
 ## First app
 Once the container is setup you can build and run your first app:
