@@ -1,6 +1,5 @@
 ### Welcome to the UBports wiki!
 
-![Oneplus one](https://ubports.com/img/opo.jpg)
 
 Are you interested in Ubuntu touch? Does it look like something you would use as a daily driver? Or maybe you're just curious on what all of this is about.
 
