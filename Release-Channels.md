@@ -22,11 +22,21 @@ Again, we do not recommend 15.04/devel for everyday use.
 
 ## Switching channels on your Ubuntu Touch device
 
-You can run the following command from the your Ubuntu Touch device's terminal to change channels:
+There are two ways to switch channels without losing data. They both involve having Developer Mode turned on and your device connected to your computer with adb.
+
+### system-image-cli
+
+You can run the following command from your computer using adb to change channels:
 
 `sudo system-image-cli --switch [channel name]`
 
-Where [channel name] is the full name of one of the current channels, such as `15.04/stable`. This process will take a while and will not give any feedback while it's running.
+Where [channel name] is the full name of one of the current channels, such as `15.04/stable`. This process will take a while and will not give any feedback while it's running. You can't run this command from the Ubuntu Touch terminal due to confinement.
+
+### ubuntu-device-flash
+
+You can also (handily) use the `ubuntu-device-flash` utility to flash a different channel without losing data.
+
+`sudo ubuntu-device-flash --server=http://system-image.ubports.com touch --channel=[channel name]`
 
 ## Past Channels
 
