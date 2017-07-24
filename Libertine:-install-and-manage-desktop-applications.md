@@ -20,7 +20,7 @@ The commands listed below cannot be run directly on the terminal app, due apparm
 
 First step is to create a new container where applications can be installed:
 
-<code> ibertine-container-manager create -i <container-identifier> </code>
+<code> ibertine-container-manager create -i container-identifier </code>
 
 You can add extra options such as:
 
@@ -34,22 +34,22 @@ To list all containers created run:
 <code> libertine-container-manager list </code>
 
 ### Destroy a container
-<code> libertine-container-manager destroy -i <container-identifier> </code>
+<code> libertine-container-manager destroy -i container-identifier </code>
 
 ### Manage applications
 
 Once a container is set up, you can manage applications:
 
-<code> libertine-container-manager list-apps -i <container-id> </code> Lists installed launchable applications
+<code> libertine-container-manager list-apps -i container-id</code> Lists installed launchable applications
 
-<code> libertine-container-manage install-package -i <container-id> -p "package-name" </code> install a package
+<code> libertine-container-manage install-package -i <container-id> -p "package-name"</code> install a package
 
-<code> libertine-container-manager remove-package -i <container-id> -p "package-name" </code>remove a package
+<code> libertine-container-manager remove-package -i <container-id> -p "package-name"</code> remove a package
 
 ### others
 
 To execute any arbitrary command inside the container run:
 
-"libertine-container-manager exec -i <container-id> -c "command you want to execute" </code>
+<code>"libertine-container-manager exec -i <container-id> -c "command you want to execute" </code>
 
 To have a shell you can use /bin/bash as a command.
