@@ -20,36 +20,36 @@ The commands listed below cannot be run directly on the terminal app, due apparm
 
 First step is to create a new container where applications can be installed:
 
-"libertine-container-manager create -i <container-identifier>"
+<code> ibertine-container-manager create -i <container-identifier> </code>
 
 You can add extra options such as:
 
-"-n <name>" name is a more user friendly name of the container
+<code> -n <name> </code>name is a more user friendly name of the container
 
-"-t <type>" type can be either chroot or lxc. Default is chroot and is compatible with every device. If the kernel of your devices support lxc, is suggested to use it
+<code>-t <type> </code>type can be either chroot or lxc. Default is chroot and is compatible with every device. If the kernel of your devices support lxc, is suggested to use it
 
 The creating process can take some time, due to the size of the container (some hunded of megabytes)
 
 To list all containers created run:
-"libertine-container-manager list"
+<code> libertine-container-manager list </code>
 
 ### Destroy a container
-"libertine-container-manager destroy -i <container-identifier>"
+<code> libertine-container-manager destroy -i <container-identifier> </code>
 
 ### Manage applications
 
 Once a container is set up, you can manage applications:
 
-"libertine-container-manager list-apps -i <container-id>" Lists installed launchable applications
+<code> libertine-container-manager list-apps -i <container-id> </code> Lists installed launchable applications
 
-"libertine-container-manage install-package -i <container-id> -p "package-name"" install a package
+<code> libertine-container-manage install-package -i <container-id> -p "package-name" </code> install a package
 
-"libertine-container-manager remove-package -i <container-id> -p "package-name"" remove a package
+<code> libertine-container-manager remove-package -i <container-id> -p "package-name" </code>remove a package
 
 ### others
 
 To execute any arbitrary command inside the container run:
 
-"libertine-container-manager exec -i <container-id> -c "command you want to execute"
+"libertine-container-manager exec -i <container-id> -c "command you want to execute" </code>
 
 To have a shell you can use /bin/bash as a command.
