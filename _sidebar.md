@@ -3,30 +3,29 @@
 Install:
 * [[How-to-install-UBports-on-your-device]]
 * [[How to use adb from ubuntu desktop]]
+* [[Release Channels]]
+
+App Development:
+* [[Set up an app development environment]]
+* [[Set up development environment in a container|Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
+* [Canonical App-Development Documentation](https://docs.ubuntu.com/phone/en/apps/api-qml-current/index)
+
+Development:
+* [[UBPorts Porting Information|UBports Development Information]]
+* [[Device Development Information]]
+* [Halium Documentation](https://docs.halium.org/)
+* [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
+
+Bug reporting
+* [[Writing a Good Bug-Report]]
+* [[UBports Bug Trackers]]
 
 Old install pages (for reference only):
 * [[How to flash existing ubuntu touch devices with Ubports images]]
 * [[Installation using UBports system-server]]
 * [[Installation using UBports Recovery]]
 
-Info:
-
-* [[Release Channels]]
-
-Development:
-* [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
-* [[UBPorts Porting Information|UBports Development Information]]
-* [[Device Development Information]]
-
-App Development:
-* [[Set up development environment|Set up an app development environment]]
-* [[Set up development environment in a container|Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
-
-Bug reporting
-* [[Writing a Good Bug-Report]]
-* [[UBports Bug Trackers]]
-
 Links:
-* [Ubuntu Touch Wiki](https://wiki.ubuntu.com/Touch)
 * [Support us on Patreon](https://patreon.com/ubports/)
+* [Donate via PayPal](https://paypal.me/ubports)
 * [Join us on Telegram](https://ubports.com/telegram)
