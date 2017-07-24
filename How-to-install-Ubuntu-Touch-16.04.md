@@ -20,9 +20,8 @@ This will start the installation process. Depending on your internet connection,
 As soon as it's ready, the phone boots and you see the Ubuntu Touch setup menue. The menue itself is functional, but due to a bug, you can't exit it. Reboot your device to bootloader like you did before, select the entry "Recovery Mode" with the volume keys and comfirm that choice with the power key. As soon as you see the UBports Recovery, issue the following command on your pc:
 
 ```
-adb shell cd /data/user-data/phablet && \
-adb shell mkdir -p .config/ubuntu-system-settings && \
-adb shell touch .config/ubuntu-system-settings/wizard-has-run && \
+adb shell mkdir -p /data/user-data/phablet.config/ubuntu-system-settings && \
+adb shell touch /data/user-data/phablet.config/ubuntu-system-settings/wizard-has-run && \
 adb reboot
 ```
 
