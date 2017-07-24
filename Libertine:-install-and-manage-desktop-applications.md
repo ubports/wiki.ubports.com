@@ -14,7 +14,7 @@ To display and launch the application you will install with Libertine you have t
 
 The commands listed below cannot be run directly on the terminal app, due apparmor restrictions. You have to either run them from another device using either adb or ssh, or from your device you can use a loopback ssh connection running this command:
 
-"ssh localhost"
+<code> ssh localhost </code>
 
 ### Create a container
 
