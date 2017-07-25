@@ -1,11 +1,11 @@
 Developers of a web application will probably do most of their coding and debugging in the usual desktop browser environment.  Because UBports' browser has excellent compliance with modern web standards, such code will most often operate on the UBports browser without further changes.
 
 For those (hopefully) rare cases where further debugging is needed, there are two ways to gain further information on the failure.
-## Simple CLI
+# Simple CLI
 If you are comfortable in a CLI environment, you can launch the _Terminal_ application, and then view the file:
     .cache/upstart/application-legacy-webbrowser-app-.log
 Most Javascript errors will leave an entry in this file.
-## Browser Debugger
+# Browser Debugger
 The native UBports web browser, known as _webbrowser-app_, is based on Google's _Blink_ technology, which also powers their _Chrome_/_Chromium_ browsers.  By starting your phone's browser in a special mode, you have access to the regular Chrome-style debugger.
 #### Stop your browser
 Swipe from the right to get the process list, then drag downward on the pane for the browser to tell the process to exit.
