@@ -7,7 +7,7 @@ Issues with the operating system are tracked [here](https://github.com/ubports/u
 ## Core Apps
 
 * [Address-Book](https://github.com/ubports/address-book-app/issues)
-* [Browser (Oxide)](https://github.com/ubports/webbrowser-component/issues)
+* [Browser (Oxide)](https://github.com/ubports/webbrowser-app/issues)
 * [Calculator](https://github.com/ubports/calculator-app/issues)
 * [Calendar](https://github.com/ubports/calendar-app/issues)
 * [Camera](https://github.com/ubports/camera-app/issues)
