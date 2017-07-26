@@ -36,6 +36,7 @@ If you have the Ubuntu SDK IDE install, you will already have the needed prerequ
 cd ~
 git clone https://github.com/bhdouglass/clickable.git
 echo "export PATH=\$PATH:~/clickable" >> ~/.bashrc
+. ~/.bashrc
 clickable setup-lxd
 ```
 
