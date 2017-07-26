@@ -1,9 +1,15 @@
+# WARNING
+Whatever you do you will hit this issue: https://github.com/bhdouglass/clickable/issues/8
+
 [Clickable](https://github.com/bhdouglass/clickable) is a program to support you with developing apps for the Ubuntu Touch platform. It is written by Brian Douglass and helps you to build, manage, install and test your app without the need of the whole Ubuntu SDK.
 
-This guide assumes you are using Ubuntu Xenial on your development machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup [[Clickable inside a container|Set-up-a-Clickable-working-environment-inside-an-LXC-container]], or the [Clickable website](https://github.com/bhdouglass/clickable) for other alternatives like snap. 
+This guide assumes you are using Ubuntu 16.04 on your development machine. Other host systems might work just fine as well. If you cannot set up Clickable as described here you might want to try the alternative instructions to setup [[Clickable inside a container|Set-up-a-Clickable-working-environment-inside-an-LXC-container]], or the [Clickable website](https://github.com/bhdouglass/clickable) for other alternatives like snap. 
 
 # Prerequisites
-
+```
+sudo apt-get install lxd android-tools-adb
+sudo lxd init
+```
 If you have the Ubuntu SDK IDE install, you will already have the needed prerequisites. If you don't already have the IDE installed you will need to install adb and lxd. After installing lxd you will need to run `lxd init` to get everything setup with lxd.
 
 # Install
