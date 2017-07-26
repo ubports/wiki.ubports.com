@@ -9,6 +9,7 @@ Install:
 App Development:
 * [[Set up an app development environment]]
 * [[Set up development environment in a container|Set-up-a-Clickable-working-environment-inside-an-LXC-container]]
+* [[Set up Cordova development environment in a container|Set-up-Cordova-development-environment-in-a-container]]
 * [Canonical App-Development Documentation](https://docs.ubuntu.com/phone/en/apps/api-qml-current/index)
 
 Development:
