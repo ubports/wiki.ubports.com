@@ -3,9 +3,10 @@
 https://docs.ubuntu.com/phone/en/platform/sdk is still available
 https://docs.ubuntu.com/phone/en/platform/installing-the-sdk is 404
 I'm joking. Ubuntu SDK is still there just the link to installing the sdk on the docs page is wrong.
-You probably know that there is a search in https://docs.ubuntu.com/phone/en/platform/sdk but just to mention it. If some link send you to 404 page, well search for it.
+You probably know that there is a search in https://docs.ubuntu.com/phone/en/platform/sdk but just to mention it. If some link sends you to 404 page, well search for it.
 The correct link for Installing Ubuntu SDK is https://docs.ubuntu.com/phone/en/platform/sdk/installing-the-sdk
-In terms of will it disappear, will it be supported, for how long, those are unknown variables depending on x^y variables.
+In terms of will it disappear, will it be supported, for how long, those are unknown variables depending on x^y variables. I'm joking again. Ubuntu SDK will be there for sure.
+Interesting and misleading topic https://forums.ubports.com/topic/180/future-of-the-ubuntu-sdk
 
 # 2. Command Line gurus
 
