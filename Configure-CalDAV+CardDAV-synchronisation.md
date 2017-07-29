@@ -11,7 +11,7 @@ However, there is a simple way to do that with a script that you can run in the 
 3) Move the file to your UbuntuTouch device, either by file manager or with adb: 
 ```adb push dav.sh /home/phablet```
 
-4) Connect with the phablet shell ( * ) and type the following:
+4) Connect with the phablet shell ( * ) or directly on the phone Terminal app and type the following:
 ```chmod +x dav.sh```
 ```./dav.sh```
 
