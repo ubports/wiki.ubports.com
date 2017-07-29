@@ -4,7 +4,7 @@ However, there is a simple way to do that with a script that you can run in the 
 1) Follow this [guide](https://wiki.ubports.com/wiki/How-to-use-adb-from-ubuntu-desktop) to activate Developer Mode and SSH connection
 
 2) Download this [script](https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839) (let's call it dav.sh) and edit the following variables: 
-- server side : CAL_URL, CONTACTS_URL, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)
+- server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)
 - CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
 - CRON_FREQUENCY (for the frequency of synchronisation)
 
