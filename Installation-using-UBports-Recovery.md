@@ -1,3 +1,12 @@
+-----------------
+
+## You probably want a different page than this
+
+This page has been rolled into our newer, better page, [[How to install UBports on Your Device|How-to-install-UBports-on-your-device]]
+
+-----------------
+
+
 Use this method if device does not have an image on our system-image server
 
 1. Download the install zip file for your device
