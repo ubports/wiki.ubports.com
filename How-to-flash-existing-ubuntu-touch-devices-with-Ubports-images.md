@@ -1,3 +1,8 @@
+### You probably want [[How to install UBports on Your Device|How-to-install-UBports-on-your-device]]
+
+
+
+
 **NOTE: THIS METHOD WILL WIPE YOUR DATA! PLEASE BACKUP BEFORE TRYING, We are working on a method that will not wipe your data, if you want to keep your data please wait until that's done or you use this backup method:**
 1. Ensure ssh-server is installed on backup destination
 ```
