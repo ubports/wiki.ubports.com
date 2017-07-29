@@ -9,11 +9,11 @@ However, there is a simple way to do that with a script that you can run in the 
 - CRON_FREQUENCY (for the frequency of synchronisation)
 
 3) Move the file to your UbuntuTouch device, either by file manager or with adb: 
-adb push script.sh /home/phablet
+```adb push script.sh /home/phablet```
 
 4) Connect with the phablet shell ( * ) and type the following 
-chmod +x script.sh
-./script.sh
+```chmod +x script.sh```
+```./script.sh```
 
 
 ( * ) One way among others to launch the phablet shell:
