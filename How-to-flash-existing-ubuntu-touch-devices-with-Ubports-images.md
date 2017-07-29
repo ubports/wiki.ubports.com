@@ -1,6 +1,8 @@
 -----------------
 
-## You probably want [[How to install UBports on Your Device|How-to-install-UBports-on-your-device]]
+## You probably want a different page than this
+
+This page has been rolled into our newer, better page, [[How to install UBports on Your Device|How-to-install-UBports-on-your-device]]
 
 -----------------
 
