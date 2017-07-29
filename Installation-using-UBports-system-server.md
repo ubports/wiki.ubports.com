@@ -1,3 +1,13 @@
+-----------------
+
+## You probably want a different page than this
+
+This page has been rolled into our newer, better page, [[How to install UBports on Your Device|How-to-install-UBports-on-your-device]]
+
+-----------------
+
+
+
 You can find instructions for each device here: [devices.ubports.com](https://devices.ubports.com)
 
 NOTE! THIS WILL WIPE YOUR PHONE AND REMOVES ALL YOUR USERDATA!
