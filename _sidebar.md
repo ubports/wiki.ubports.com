@@ -22,11 +22,6 @@ Bug reporting
 * [[Writing a Good Bug-Report]]
 * [[UBports Bug Trackers]]
 
-Old install pages (for reference only):
-* [[How to flash existing ubuntu touch devices with Ubports images]]
-* [[Installation using UBports system-server]]
-* [[Installation using UBports Recovery]]
-
 Links:
 * [Support us on Patreon](https://patreon.com/ubports/)
 * [Donate via PayPal](https://paypal.me/ubports)
