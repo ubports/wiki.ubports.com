@@ -2,21 +2,17 @@
 
 Libertine is a tool to install and manage standard desktop applications in Ubuntu Touch.
 
-## Background explaination
+## Background 
 
 A display server coordinates input and output of an operating system. Most Linux distributions today use the X server while Ubuntu Touch uses a new generation server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Application installed with Libertine will use XMir to work. 
 
 Another challenge is that Ubuntu Touch system updates are released as OTA images. Therefore the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop programs.
 
-## Useful commands
+## Desktop Apps Scope
 
-### Notes
+To display and launch applications with Libertine you need the Desktop Apps Scope which is available in the Canonical App Store.
 
-To display and launch applications with Libertine you need the Desktop Apps Scope, available in the Canonical Store.
-
-The commands listed below cannot be run directly on the terminal app, due apparmor restrictions. You have to either run them from another device using either adb or ssh, or from your device you can use a loopback ssh connection running this command:
-
-<code> ssh localhost </code>
+## Manage containers
 
 ### Create a container
 
@@ -32,13 +28,20 @@ You can add extra options such as:
 
 The creating process can take some time, due to the size of the container (some hunded of megabytes).
 
+#### Note
+
+The create command shown above cannot be run directly in the terminal app, due apparmor restrictions. You can run it from another device using either adb or ssh connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command:
+
+<code> ssh localhost </code>
+
+### List containers
 To list all containers created run:
 <code> libertine-container-manager list </code>
 
 ### Destroy a container
 <code> libertine-container-manager destroy -i container-identifier </code>
 
-### Manage applications
+## Manage applications
 
 Once a container is set up, you can manage applications:
 
@@ -48,7 +51,7 @@ Once a container is set up, you can manage applications:
 
 <code> libertine-container-manager remove-package -i container-identifier -p package-name</code> remove a package
 
-### others
+## Other useful commands
 
 To execute any arbitrary command inside the container run:
 
