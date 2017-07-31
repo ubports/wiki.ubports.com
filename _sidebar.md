@@ -1,7 +1,7 @@
 [[Home]]
 
 Install:
-* [[How-to-install-UBports-on-your-device]]
+* [[Install UBports|How-to-install-UBports-on-your-device]]
 * [[How to use adb from ubuntu desktop]]
 * [[CalDAV and CardDAV synchronisation|Configure-CalDAV/CardDAV-synchronisation]]
 * [[Release Channels]]
