@@ -4,9 +4,9 @@ Libertine is a tool to install and manage standard desktop applications in Ubunt
 
 ## Background 
 
-A display server coordinates input and output of an operating system. Most Linux distributions today use the X server while Ubuntu Touch uses a new generation server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Application installed with Libertine will use XMir to work. 
+A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications. 
 
-Another challenge is that Ubuntu Touch system updates are released as OTA images. Therefore the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop programs.
+Another challenge is that Ubuntu Touch system updates are released as OTA images. Therefore the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications.
 
 ## Desktop Apps Scope
 
