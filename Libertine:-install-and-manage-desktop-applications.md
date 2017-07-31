@@ -57,4 +57,8 @@ To execute any arbitrary command inside the container run:
 
 <code>libertine-container-manager exec -i container-identifier -c "command you want to execute" </code>
 
-To have a shell you can use /bin/bash as command.
+To have a shell you can run bash: 
+<code>libertine-container-manager exec -i container-identifier -c /bin/bash </code>
+
+### Note
+When you launch bash in this way you will not get any specific feedback to confirm that you are not inside the container. You can check `ls /` to confirm for yourself that you are inside the container. The listing of `ls /` will be different inside and outside of the container.
