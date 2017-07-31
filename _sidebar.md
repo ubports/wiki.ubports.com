@@ -3,6 +3,7 @@
 Install:
 * [[How-to-install-UBports-on-your-device]]
 * [[How to use adb from ubuntu desktop]]
+* [[Configure CalDAV/CardDAV synchronisation|Configure-CalDAV%2BCardDAV-synchronisation]]
 * [[Release Channels]]
 * [[EXPERIMENTAL: Install Ubuntu Touch 16.04|How to install Ubuntu Touch 16.04]]
 
