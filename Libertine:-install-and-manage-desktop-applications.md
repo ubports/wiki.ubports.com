@@ -20,7 +20,7 @@ The commands listed below cannot be run directly on the terminal app, due apparm
 
 First step is to create a new container where applications can be installed:
 
-<code> ibertine-container-manager create -i container-identifier </code>
+<code> libertine-container-manager create -i container-identifier </code>
 
 You can add extra options such as:
 
