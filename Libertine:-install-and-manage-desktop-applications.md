@@ -1,6 +1,6 @@
 ## Introduction
 
-Libertine is a command line tool to easily install and manage standard desktop applications in Ubuntu Touch using containers.
+Libertine is a tool to install and manage standard desktop applications in Ubuntu Touch.
 
 ## Background explaination
 
