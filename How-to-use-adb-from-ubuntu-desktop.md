@@ -8,5 +8,5 @@ Even if you own a [One Plus One (OPO)](https://devices.ubports.com/#/bacon) you 
 Other devices don't need to be added manually.
 Then you have to kill the adb server:
 ```adb kill-server```
-And than with ```adb devices``` you get your adb device listed.
+And then with ```adb devices``` you get your adb device listed.
 For available adb options have a look at the [Android Debug Bridge user guide](https://developer.android.com/studio/command-line/adb.html)
