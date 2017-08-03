@@ -7,17 +7,14 @@ However, there is a simple way to do that with a script that you can run in the 
 - server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)
 - CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
 - CRON_FREQUENCY (for the frequency of synchronisation)
+- Line 61: write ```sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"``` , instead of ```sudo echo "$COMMAND_LINE" > /sbin/sogosync```
 
 3) Move the file to your UbuntuTouch device, either by file manager or with adb: 
 ```adb push dav.sh /home/phablet```
 
-4) Connect with the phablet shell ( * ) or directly on the phone Terminal app and type the following:
+4) Connect with the phablet shell (```adb shell```) or directly on the phone Terminal app and type the following:
 ```chmod +x dav.sh```
 ```./dav.sh```
-
-
-( * ) One way among others to launch the phablet shell:
-Install ubuntu-sdk (ppa:ubuntu-sdk-team/ppa), put your phone in developer mode, open ubuntu-sdk, connect your device to computer, go to devices in ubuntu-sdk and in control, exec open ssh session. 
 
 
 Sources:
