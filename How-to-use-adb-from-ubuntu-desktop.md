@@ -4,7 +4,8 @@ If you own a [Fairphone 2](https://devices.ubports.com/#/FP2) you have to add yo
 ```echo "0x2ae5" > ~/.android/adb_usb.ini```
 Even if you own a [One Plus One (OPO)](https://devices.ubports.com/#/bacon) you have to do add it: 
 ```echo "0x9d17" » ~/.android/adb_usb.ini```
-Other devices doens't need to be added manually.
+
+Other devices don't need to be added manually.
 Then you have to kill the adb server:
 ```adb kill-server```
 And than with ```adb devices``` you get your adb device listed.
