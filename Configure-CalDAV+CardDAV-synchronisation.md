@@ -7,7 +7,7 @@ However, there is a simple way to do that with a script that you can run in the 
 - server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)
 - CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
 - CRON_FREQUENCY (for the frequency of synchronisation)
-- Line 61: write ```sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"``` , instead of ```sudo echo "$COMMAND_LINE" > /sbin/sogosync```
+- Line 61: write ```sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"``` , instead of ```sudo echo "$COMMAND_LINE" > /sbin/sogosync```, to avoid permission denied error
 
 3) Move the file to your UbuntuTouch device, either by file manager or with adb: 
 ```adb push dav.sh /home/phablet```
