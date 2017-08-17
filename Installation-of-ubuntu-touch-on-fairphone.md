@@ -1,3 +1,5 @@
+NOTE: This page is out of date and might contain information that is no longer accurate. See "[[How-to-install-UBports-on-your-device]]" for the latest installation guide.
+
 There is a bug with the bootloader on fairphone devices, so normal install instrictions wont work on there devices.
 
 The workaround for this bug is to flash boot.img and recovery.img using fastboot
