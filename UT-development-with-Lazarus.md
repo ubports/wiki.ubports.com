@@ -1,3 +1,5 @@
+## Introduction
+
 [Lazarus IDE](https://www.lazarus-ide.org) is a cross-platform open source and free IDE based on Delphi, that also supports ARM Linux natively. It uses [Free Pascal compiler](https://www.freepascal.org), and you can use it to compile once written code to a plethora of targets, including (but not limited to): Windows, OSX, Linux, and plethora of architectures, including Intel, ARM and many others. Both Free Pascal compiler and Lazarus IDE can be compiled, or installed from precompiled binaries/packages on Ubuntu Touch, using a default ARM Linux releases. In fact both **fpc** and **lazarus** packages are available in the default Ubuntu repositories, but most likely these are not the most recent versions, so on your Ubuntu Touch you could just run:
      
     sudo apt-get install fpc lazarus
@@ -18,6 +20,25 @@ Benefits of using Lazarus are:
 * You kill multiple birds with one stone, because whatever you write for UT, you can also compile for Linux Desktop, Windows, OSX and other OSes
 * you can actually create apps for UT device on the UT device itself!
 
-GTK vs QT
+## GTK vs QT
+
 When compiling Lazarus app, it gets built against a widgetset. By default the widgetset is GTK (unless you are using QT Lazarus version), but you can change a widgetset in the Lazarus configuration. Even if you do, the version of QT that Lazarus uses is 4, whereas UT devices use newer QT5. There are QT5 bindings for Lazarus available, but reportedly they are not very recent.
 The simplest way between design and production is to build standard GTK apps. Currently the [GTK port for Mir](http://www.omgubuntu.co.uk/2014/06/ubuntu-devs-demo-gtk-apps-running-mir-unity-8) display server is only experimental and it is not sure if it will continue. But UT comes with XMir by default, which will run GTK apps on the phone itself: [X applications on Ubuntu Phone](http://kriscode.blogspot.tw/2016/09/x-applications-on-ubuntu-phone.html)
+
+If you do go down this road, one think has to be kept in mind. Although Lazarus has support for high DPI, compiled apps do not detect the correct DPI value when used on the UT device. Probably this is because XMir layer does not report it correctly to the app when serving as a wrapper to some xorg specific APIs. Because of that, at least currently (because XMir might receive a patch at some point) it will be your task to manually adjust size of all the GUI elements when they are launched on the high DPI of a UT device. It is not a difficult thing, but has to be remembered about, otherwise the app on your phone will look very small, with tiny fonts, buttons, etc.
+
+##  Deployment
+
+You could package your compild app with something that UT recognizes, like click or snaps. But you can also deploy it in a generic way, not specific to UT platform. You just need to create a launcher that would show up on the Apps scope of your UT device, that will launch the compiled binary via XMir. Suppose your binary file is located at **~/.local/MyApp/myapp**, then you need to create a launcher file in **~/.local/share/appliations/MyApp.desktop** with this content:
+    
+    [Desktop Entry]
+    Name=<AppName>
+    Comment=<your app description>
+    X-Ubuntu-Touch=true
+    X-Ubuntu-XMir-Enable=true
+    Exec=<path_to_your_app>
+    Icon=<path_to_your_icon>
+    Terminal=false
+    Type=Application
+     
+this is basically all regular .desktop file format (if you are familiar with it on Ubuntu Desktop), but there are few UT-specific flags: X-Ubuntu-Touch and X-Ubuntu-XMir, which will assure that your app will get launched via the Xmir compatibility layer. This is also covered in the external article [X applications on Ubuntu Phone](http://kriscode.blogspot.tw/2016/09/x-applications-on-ubuntu-phone.html) that has been linked to in the begining of this wiki page.
