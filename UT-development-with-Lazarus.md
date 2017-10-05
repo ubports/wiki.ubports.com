@@ -11,7 +11,7 @@
 Just that in reality there are few problems with this:
 * on UT devices by default the system partition is read-only (can be easilyremounted to rw though)
 * on UT devices by default the free space on system partition is quite low and might not be enough for installing both packages along with all dependencies (on Meizu MX4 phone with original UT only fpc package was possible to install, but not lazarus due to insufficient space). The resizing of the filesystem is not a very easy task.
-* by default Lazarus IDE, which is a GTK app starts in multi-window mode, which does not work well when running gtk on the UT device via XMir. Lazarus can be configured into single window mode, which solves the problem. 
+* by default Lazarus IDE, which is a GTK app starts in multi-window mode, which does not work well when running gtk on the UT device via XMir. Lazarus can be configured into single window mode (see screenshots on top of this page), which solves the problem. 
 
 Laso Lazarus comes in QT mode, but built with an older QT than the version supported by UT. Also using Lazarus with OSK (on screen keyboard) is not convenient, but when using BT keyboard/mouse dongle over phones OTG/USB port, it works greatm, and UT will even show up a mouse pointer like on Ubuntu Desktop. Finally, one great way to use Lazarus is via ssh with X forwarding. in that scenario, although Lazarus IDE is installed and running off your UT device (phone/tablet) but it is forwarded via ssh onto your Ubuntu Desktop's monitor, and you also can use your desktop's keyboard and mouse to interact with it.
 
