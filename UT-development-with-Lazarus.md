@@ -42,3 +42,18 @@ You could package your compild app with something that UT recognizes, like click
     Type=Application
      
 this is basically all regular .desktop file format (if you are familiar with it on Ubuntu Desktop), but there are few UT-specific flags: X-Ubuntu-Touch and X-Ubuntu-XMir, which will assure that your app will get launched via the Xmir compatibility layer. This is also covered in the external article [X applications on Ubuntu Phone](http://kriscode.blogspot.tw/2016/09/x-applications-on-ubuntu-phone.html) that has been linked to in the begining of this wiki page.
+
+## Use scenarios
+
+**Number 1 use case: direct** is when you install Lazarus and FPC directly on your UT device, but unless you can ensure enough free space on your system partition, this can be troublesome.
+
+**Number 2 use case: containers** is to install it inside a container on your UT device, becasue the container folder/image can fit somehwere in your userspace, which is portion of the filesystem that has all the storage for you to use. There are multiple container approaches to choose from, and this external link will introduce you to [Easy containers on Ubuntu Touch with qemu-debootstrap](http://kriscode.blogspot.tw/2016/12/easy-containers-on-ubuntu-touch.html)
+
+**DISCLAIMER**
+Both the 1st and the 2nd approaches will allow you to either start and use Lazarus IDE on your UT device screen, or via ssh forwareded X session.
+
+**Number 3 use case: non-Mir ARM Linux**
+It is very convenient (perhaps the most convenient because of problems related to 1st use case) to use Lazarus on another ARM Linux with a xorg based display server instead of Mir. Great scenario is if you have a single board computer like Raspberry Pi, and Ubuntu Mate (or other Linux with graphical session manager) running on it. Installing Lazarus and FPC will be absolutely straightforward in such a scenario, and compiled binaries, since the device is already ARM Linux, will be ready to be copied over onto your UT device, and will work there as well. Just remember about the XMir layer (it has to have a custom launcher file).
+
+**Number 4 use case: qemulated ARM chroot**
+on your intel-based Ubuntu Desktop, you can always create debootstrap chroot jail using qemu-system-arm, which will emulate ARM execution environment. It is not exactly a virtual machine approach, but it feels pretty much like it. Just that your guest OS will be ARM whereas your host is intel based. In fact, you can do that even on Windows host. whatever you create and compile inside such a chroot environment, you can just copy over to your UT device, because it will be a valid ARM Linux binary.
