@@ -1,6 +1,6 @@
 # Alternative app development with Lazarus
 
-When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative is covered in [UT development with Lazarus] wiki, which talks about using Free Pascal to create software (apps, services/daemons, command-line tools, etc.) and focuses on using an excellent Lazarus IDE, which can even run on the UT device itself, allowing you for UT software development without emulation or cross-compiling.
+When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative is covered in [[UT development with Lazarus]] wiki, which talks about using Free Pascal to create software (apps, services/daemons, command-line tools, etc.) and focuses on using an excellent Lazarus IDE, which can even run on the UT device itself, allowing you for UT software development without emulation or cross-compiling.
 
 # Clickable
 
