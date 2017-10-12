@@ -5,4 +5,4 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Geany):
 > In contrast to traditional Unix-based editors like Emacs or Vim, Geany more closely resembles programming editors common on Microsoft Windows such as Programmer's Notepad or Notepad++, both of which also use Scintilla.
 
 ## Geany on UT device
-Temporarily this portion is linking to an external article: [http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html](Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages)
+Temporarily this portion is linking to an external article: [Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages](http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html)
