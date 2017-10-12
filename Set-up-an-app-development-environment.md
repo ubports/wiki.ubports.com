@@ -1,6 +1,6 @@
-# Alternative app development with Lazarus
+# Alternative: on-device software development
 
-When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative is covered in [[UT development with Lazarus]] wiki, which talks about using Free Pascal to create software (apps, services/daemons, command-line tools, etc.) and focuses on using an excellent Lazarus IDE, which can even run on the UT device itself, allowing you for UT software development without emulation or cross-compiling.
+Right before diving into the Lazarus IDE, please consider checking the page about [[UT on-device software development]]. When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative approach is [[UT on-device software development]] wiki, which gathers various methods of native software development on the UT device itself, using tools that run on the phone/tablet itself. Listed alternatives propose few different tools and programming languages, some more simple, some more sophisticated.
 
 # Clickable
 
