@@ -1,6 +1,6 @@
 # Alternative: on-device software development
 
-Right before diving into the topic, please consider checking the page about [[UT on-device software development]]. When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative approach is [[UT on-device software development]] wiki, which gathers various methods of native software development on the UT device itself, using tools that run on the phone/tablet itself. Listed alternatives propose few different tools and programming languages, some more simple, some more sophisticated.
+When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative approach is [[UT on-device software development]] wiki, which gathers various methods of native software development on the UT device itself, using tools that run on the phone/tablet itself. Listed alternatives propose few different tools and programming languages, some more simple, some more sophisticated.
 
 # Clickable
 
