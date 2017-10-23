@@ -4,11 +4,13 @@
 
  - Nexus 5 (*hammerhead*)
  - Oneplus One (*bacon*)
- - Fairphone 2 (*FP2*)
+ - Fairphone 2 (*FP2*) (Only UBports installer)
 
 ## How to install
 
-Boot your device to fastboot mode by powering it down completely and holding down the volume down and power key until the phone vibrates.
+You can install your device using the [UBports installer](https://github.com/ubports/ubports-installer). Select the 16.04/devel channel and check the wipe option. The installation will overwrite all of the phones internal memory.
+
+Alternatively (except on the Fairphone 2 where this method does not work), boot your device to fastboot mode by powering it down completely and holding down the volume down and power key until the phone vibrates.
 
 As soon as you see the bootloader mode, connect the device with a usb cable to your Linux PC and run this command:
 
