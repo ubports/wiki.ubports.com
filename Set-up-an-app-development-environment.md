@@ -1,6 +1,6 @@
 # Alternative: on-device software development
 
-When it comes to app development, there is the default approach, as well as there are alternative ones. One such alternative approach is [[UT on-device software development]] wiki, which gathers various methods of native software development on the UT device itself, using tools that run on the phone/tablet itself. Listed alternatives propose few different tools and programming languages, some more simple, some more sophisticated.
+When it comes to app development, there is the default approach, and some alternative ones. One such alternative approach is the [[UT on-device software development]] wiki, which gathers various methods of native software development on the UT device itself, using tools that run on the phone/tablet itself. Listed alternatives propose a few different tools and programming languages, some more simple, some more sophisticated.
 
 # Clickable
 
@@ -15,7 +15,7 @@ Ubuntu 16.04
 sudo apt-get install lxd android-tools-adb
 sudo lxd init
 ```
-If you have the Ubuntu SDK IDE install, you will already have the needed prerequisites. If you don't already have the IDE installed you will need to install adb and lxd. After installing lxd you will need to run `lxd init` to get everything setup with lxd.
+If you have the Ubuntu SDK IDE install, you will already have the necessary prerequisites. If you don't already have the IDE installed you will need to install adb and lxd. After installing lxd you will need to run `lxd init` to get everything setup with lxd.
 
 ## Install
 
@@ -29,7 +29,7 @@ clickable setup-lxd
 
 ## First app
 
-Now you are setup to build and run your first app:
+Now you are set up to build and run your first app:
 
 ```
 git clone https://github.com/bhdouglass/ut-app-template
@@ -39,7 +39,7 @@ clickable
 
 This should build and start an app on your Ubuntu Touch device displaying "Hello World!"
 
-Read on [here](https://github.com/bhdouglass/clickable#usage) for further instructions.
+Look [here](https://github.com/bhdouglass/clickable#usage) for further instructions.
 
 # Ubuntu SDK IDE (unsupported)
 
