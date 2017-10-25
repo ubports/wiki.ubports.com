@@ -1,4 +1,4 @@
-**WARNING:** 16.04-based Ubuntu Touch is in an early state of development and usable as a daily driver for the moment.
+**WARNING:** 16.04-based Ubuntu Touch is in an early state of development and is not usable as a daily driver for the moment.
 
 ## Supported devices
 
