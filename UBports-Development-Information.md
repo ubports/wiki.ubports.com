@@ -1,5 +1,7 @@
 **Watch out!** This documentation is outdated. It is only here for reference purposes and should not be followed for new ports. Instead, please go to [the Halium documentation](http://docs.halium.org/en/latest/index.html) to begin your porting adventure.
 
+----
+
 You can begin porting Ubuntu Touch to any phone with:
 Android 4.4.2 (in the official Google tree, Nexus 4, not used by UBports)
 CyanogenMod 12.1 (What we develop on, any device with this version will work in theory.)
