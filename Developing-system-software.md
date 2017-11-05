@@ -64,3 +64,44 @@ By default crossbuilder does not run unit tests; that's both for speed reasons, 
     crossbuilder --ubuntu=15.04 shell
     
 and then find the unit tests and execute them. Be aware that the emulation is not perfect, so there's a very good chance that the tests will fail even when they'd otherwise succeed, when run into a proper environment. For that reason, it's probably wiser not to worry about unit tests when working with crossbuilder, and run them only when not cross-compiling.
+
+## Developing in the host architecture, deploying via PPA
+
+Another way to develop system software is to develop it locally on your desktop machine, and then push the source code to a Launchpad PPA and have it built there for the armhf architecture. Depending on whether the feature you are developing can be reasonably tested in your local machine, and whether you can wait for Launchpad's builders to start working on your package (this could take some hours), this might or might not be a suitable way of device development.
+
+Start by getting [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and an Ubuntu image matching the base image of your device. You can get the Ubuntu image here:
+
+ * `15.05 (Vivid)`: http://old-releases.ubuntu.com/releases/15.04/ubuntu-15.04-desktop-amd64.iso
+ * `16.04 (Xenial)`: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso
+
+Boot your VirtualBox machine with the Ubuntu image you downloaded, and once the installation is completed and you get to a terminal, add the [Stable Phone Overlay PPA](https://launchpad.net/~ci-train-ppa-service/+archive/ubuntu/stable-phone-overlay) like this:
+
+    sudo add-apt-repository ppa:ci-train-ppa-service/stable-phone-overlay
+    sudo apt-get update
+    sudo apt-get dist-upgrade
+
+You can then install the development tools you need, as well as the build dependencies of the component you want to work on:
+
+    sudo apt-get install vim git devscripts
+    sudo apt-get build-dep address-book-app
+    
+and then build the package locally:
+
+    DEB_BUILD_OPTIONS="parallel=4 debug" dpkg-buildpackage -rfakeroot -b
+
+Change the `parallel` option according to how many processor cores you've made available to VirtualBox in order to amximize the build speed. The command above will build your package and also run all unit tests associated with it, so it's an easy (though not sufficient!) way to check that your changes won't break existing functionality. You can now develop your changes and test them locally (though, if your component needs access to phone hardware, that will obviously not work), until you are satisfied with the result.
+
+Once you get to a state where you believe that your changes should work, you can push them into a PPA, so that they'll be built for your Ubports device and you (and other users) will be able to test them. First, create a PPA by visiting https://launchpad.net/~/+activate-ppa; enter a name and a description, then push the Create button, and on the next page pick the "Change details" link near the upper right corner. You can then enable your phone's architecture (with most likelihood, it's "ARM ARMv7 Hard Float"), disable all the architectures you don't care about, and click on "Save". Supposing that your Launchpad username is "ubdeveloper" and the PPA is called "myppa", then the commands to push your changes to the PPA will be as follows:
+
+    debuild -S
+    dput ppa:ubdeveloper/myppa ../address-book-app_*_source.changes
+    
+where the exact filename of the `.changes` file will be printed by the debuild command near the end of its output. Note that in order for the upload to succeed you will need to have a valid GPG key setup, and it must be [added to Launchpad](https://launchpad.net/~/+editpgpkeys). If you are new to this stuff, it's recommended that you carefully read the [documentation in Launchpad](https://help.launchpad.net/Packaging/PPA/Uploading).
+
+After the package has been uploaded, you should receive an e-mail by launchpad telling you whether the upload was accepted; if it was, then it means that Launchpad will try to build the source package for all the architectures supported by your PPA and, if successful, will finally publish the resulting package(s) in it. Now all what is left to do is to install the packages in your phone: to accomplish that, you can use `phablet-shell` to get access to your phone, and from there type the following commands:
+
+    sudo add-apt-repository ppa:ubdeveloper/myppa
+    sudo apt-get update
+    sudo apt-get install <your new package(s)>
+    
+You can also give the same installation instructions to other community members, if you want them to test your changes before submitting them upstream for review.
