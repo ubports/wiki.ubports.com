@@ -20,3 +20,47 @@ This will install a bunch of packages into your device's rootfs. Additionally, y
 Now, you are ready to build the package:
 
     DEB_BUILD_OPTIONS="parallel=2 debug" dpkg-buildpackage -rfakeroot -b
+    
+and finally, install it. The `dpkg-buildpackage` command will print out the list of generated packages, and it's those filenames you will need to pass to the next command:
+
+    sudo dpkg -i ../<package>.deb [../<package2>.deb ...]
+    
+Note, however, that you might not need to install all the packages: generally, you can skip all packages whose name ends with `-doc` or `dev`, since they don't contain code used by the device.
+
+## Cross-building with crossbuilder
+
+This is the recommended way to develop non trivial changes, and it's suitable for all devices since the build happens on your desktop PC (will call it "host" from now on) and not on the target device. It's also extremely fast and easy to use.
+
+Start with installing `crossbuilder` in your host:
+
+    git clone git@github.com:ubports/crossbuilder.git
+    
+It's a shell script, so you don't need to build it. Instead, you will need to add its directory to your `PATH` environment variable, so that you can execute it from any directory:
+
+    echo "export PATH=$HOME/crossbuilder:$PATH" >> ~/.bashrc
+    # and add it to your own session:
+    export PATH="$HOME/crossbuilder:$PATH"
+
+Then, you need to setup LXD; luckily, crossbuilder has a command which does everything for you; you just need to carefully follow its instructions:
+
+    crossbuilder setup-lxd
+    
+If this is the first time you used LXD, you might need to reboot your host once everything has completed.
+After LXD has been setup, using crossbuilder is as easy as it can get: just move to the directory where the source code of your project is (for example, `~/src/git/address-book-app`) and launch it like this:
+
+    cd ~/src/git/address-book-app
+    crossbuilder --ubuntu=15.04
+    
+*Note: if your device is connected to the PC, you don't need to specify the `--ubuntu=15.04` parameter because crossbuilder will figure out the proper Ubuntu version by itself. If you don't specify any parameter and have no device connected to your PC, crossbuilder will assume `16.04` (Xenial).*
+
+Crossbuilder will do everything for you: it will create the LXD container, download the development image, install all your package build dependencies, perform the build and finally, if your device is connected to your host, it will copy the packages over to the target and install them. The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package.
+
+Now, whenever you change the source code in your git repository, the same changes will be available inside the container, and the next time you'll type the `crossbuilder` command, only the changed files will be rebuilt. This makes iterative development blazing fast.
+
+### Unit tests
+
+By default crossbuilder does not run unit tests; that's both for speed reasons, and because the container created by crossbuilder is not meant to run native (target) executables: the development tools (qmake/cmake, make, gcc, etc.) are all run in the host architecture, with no emulation (again, for speed reasons). However, qemu emulation is available inside the container, so it should be possible to run unit tests inside the container. You can do that by getting a shell inside the container with
+
+    crossbuilder --ubuntu=15.04 shell
+    
+and then find the unit tests and execute them. Be aware that the emulation is not perfect, so there's a very good chance that the tests will fail even when they'd otherwise succeed, when run into a proper environment. For that reason, it's probably wiser not to worry about unit tests when working with crossbuilder, and run them only when not cross-compiling.
