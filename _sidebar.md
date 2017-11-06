@@ -18,6 +18,7 @@ Development:
 * [[Device Development Information]]
 * [Halium Documentation](https://docs.halium.org/)
 * [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
+* [[System SW development|Developing-system-software]]
 
 Bug reporting
 * [[Writing a Good Bug-Report]]
