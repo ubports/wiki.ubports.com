@@ -69,9 +69,10 @@ and then find the unit tests and execute them. Be aware that the emulation is no
 
 Another way to develop system software is to develop it locally on your desktop machine, and then push the source code to a Launchpad PPA and have it built there for the armhf architecture. Depending on whether the feature you are developing can be reasonably tested in your local machine, and whether you can wait for Launchpad's builders to start working on your package (this could take some hours), this might or might not be a suitable way of device development.
 
+*Note: as of late 2017, Launchpad has dropped support for vivid-based PPAs. So, if you target the current 15.04 Ubports devices, this method is not suitable for you.*
+
 Start by getting [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and an Ubuntu image matching the base image of your device. You can get the Ubuntu image here:
 
- * `15.05 (Vivid)`: http://old-releases.ubuntu.com/releases/15.04/ubuntu-15.04-desktop-amd64.iso
  * `16.04 (Xenial)`: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso
 
 Boot your VirtualBox machine with the Ubuntu image you downloaded, and once the installation is completed and you get to a terminal, add the [Stable Phone Overlay PPA](https://launchpad.net/~ci-train-ppa-service/+archive/ubuntu/stable-phone-overlay) like this:
