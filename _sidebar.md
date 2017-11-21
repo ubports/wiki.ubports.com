@@ -17,6 +17,7 @@ Development:
 * [[UBPorts Porting Information|UBports Development Information]]
 * [[Device Development Information]]
 * [Halium Documentation](https://docs.halium.org/)
+* [[System SW development|Developing-system-software]]
 * [Canonical Porting Guide, slightly outdated](https://docs.ubuntu.com/phone/en/devices/porting-new-device)
 
 Bug reporting
