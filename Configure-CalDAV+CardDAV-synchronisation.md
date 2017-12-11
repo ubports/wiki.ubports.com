@@ -1,5 +1,8 @@
-At the moment, there is no caldav/carddav implemention directly accessible from the Ubuntu Touch interface, so the only way to sync carddav & caldav is by using syncevolution + cron.
-However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection.
+CalDAV and CardDAV are protocols to syncronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface.
+
+**Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select "Add internet calendar > Generic CalDAV". Enter your calendar URL as well as your username and password to complete the process.
+
+At the moment, there is no carddav implemention directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well.
 
 1) Follow this [guide](https://wiki.ubports.com/wiki/How-to-use-adb-from-ubuntu-desktop) to activate Developer Mode and SSH connection
 
